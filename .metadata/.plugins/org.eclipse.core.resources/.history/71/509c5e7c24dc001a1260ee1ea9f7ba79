@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Desafio {
+
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int n1 = 1, n2 = 0;
+		int n,i=0,num=0;
+		n = ler.nextInt();
+	while(i<n) {
+		System.out.println("A sequencia de fibonacci eh: "+n1);
+		n2=n1;
+		n2=n1;
+		n1=n2;
+		i++;
+	}
+
+	}
+
+}

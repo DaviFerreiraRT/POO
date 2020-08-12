@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Desafio {
+	public static int fib(int x) {
+		int n1 = 1, n2 = 0;
+		int n=0, i = 0, num = 0;
+
+		while (i < n) {
+			x = n1 + n2;
+			n2 = n1;
+			n1 = num;
+			i++;
+		}
+		return num;
+	}
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		System.out.print("Digite quantos termos devem ser mostrados:");
+		int n = ler.nextInt();
+		fib(n);
+		System.out.println("A sequencia de fibonacci eh: " + n);
+	}
+
+}

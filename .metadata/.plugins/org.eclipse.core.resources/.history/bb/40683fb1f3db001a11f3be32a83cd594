@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Conversor {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		do {
+			
+			int escolha = ler.nextInt();
+
+		} while (true);
+
+	}
+}

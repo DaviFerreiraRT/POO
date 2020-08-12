@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Matriz {
+	public static int contador(int matriz[][]) {
+		int cont=0;
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int linhas = scan.nextInt();
+		int colunas = scan.nextInt();
+		int matriz[][] = new int[linhas][colunas];
+		
+		for(int i=0;i<linhas;i++) {
+			for(int j=0;j<colunas;j++) {
+				matriz[i][j]=scan.nextInt();
+			}
+		}
+		System.out.println(matriz.length);
+	}
+
+}

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Nome {
+	public static void somar(int x,int y ) {
+		int z=x+y;
+		System.out.println("A soma é"+z);
+	}
+
+	public static void main(String[] args) {
+		somar(5,8);
+
+}
+}

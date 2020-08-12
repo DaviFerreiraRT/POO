@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Nome {
+	public static void imprimir() {
+		
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("A");
+		System.out.println("B");
+	}
+	public static void main(String[] args) {
+		imprimir();
+		Scanner Ler=new Scanner(System.in);
+		System.out.println("Digite o seu nome");
+		String nome=Ler.nextLine();
+		System.out.println("Seja bem vindo "+nome);
+		
+
+	}
+
+}

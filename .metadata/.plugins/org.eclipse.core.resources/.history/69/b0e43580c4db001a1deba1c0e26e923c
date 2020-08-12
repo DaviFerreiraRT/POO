@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Nome {
+	public static void imprimir() {
+		System.out.println("A");
+		System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E");
+		System.out.println("G");
+		System.out.println("H");
+		System.out.println("I");
+	}
+	public static void nome() {
+		Scanner Ler=new Scanner(System.in);
+		System.out.println("Digite o seu nome");
+		String nome=Ler.nextLine();
+		System.out.println("Seja bem vindo "+nome);
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Primeiro Chama o método imprimir()");
+		imprimir();
+		System.out.println("Depois de chamar o método imprimir(), logo após, chama o método nome()");
+		nome();
+		System.out.println("Depois de chamar nome()");
+	}
+
+}
