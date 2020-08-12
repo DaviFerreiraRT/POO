@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Conversor<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Conversor",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Desafio<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Desafio",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Matriz<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Matriz",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Questao1<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Questao1",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Questao2<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Questao2",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Questao3<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Questao3",
+            "projectName": "Atividades Metodos"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Questao5<Atividades Metodos>",
+            "request": "launch",
+            "mainClass": "Questao5",
+            "projectName": "Atividades Metodos"
+        }
+    ]
+}
