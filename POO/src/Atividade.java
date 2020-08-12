@@ -10,9 +10,9 @@ public class Atividade {
 		b = Num2.nextInt();
 		float c = a / (float) b;
 		System.out.println("A soma deu " + (a + b));
-		System.out.println("A subtraÁ„o deu " + (a - b));
-		System.out.println("A multiplicaÁ„o deu " + (a * b));
-		System.out.println("A divis„o deu " + c);
+		System.out.println("A subtra√ß√£oo deu " + (a - b));
+		System.out.println("A multiplica√ß√£o deu " + (a * b));
+		System.out.println("A divis√£o deu " + c);
 	}
 
 	//
@@ -21,8 +21,8 @@ public class Atividade {
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Informe seu nome: ");
 		nome = ler.nextLine();
-		System.out.println("O meu nome È " + nome);
-		System.out.print("Informe seu endereÁo: ");
+		System.out.println("O meu nome √©  " + nome);
+		System.out.print("Informe seu endere√ßo: ");
 		endereco = ler.nextLine();
 		System.out.println("Eu moro em " + endereco);
 		System.out.print("Informe sua data de nascimento:");
@@ -39,13 +39,13 @@ public class Atividade {
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Informe o nome do seu curso: ");
 		nomeCurso = ler.nextLine();
-		System.out.println("O curso È de " + nomeCurso);
+		System.out.println("O curso √© de " + nomeCurso);
 	}
 
 	public static void main(String[] args) {
 		int i;
 		Scanner ler = new Scanner(System.in);
-		System.out.print("Informe a quest„o a ser respondida: ");
+		System.out.print("Informe a quest√£o a ser respondida: ");
 		i = ler.nextInt();
 		while (i != 0) {
 			if (i == 1) {
