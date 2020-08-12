@@ -19,10 +19,10 @@ public class Funcao {
 		float resultado=z(i,o,a);
 		System.out.println("A sua media foi: "+resultado);
 		if(resultado>=5.5) {
-			System.out.println("Você foi Aprovado");
+			System.out.println("Voce foi Aprovado");
 		}
 		else {
-			System.out.println("Você foi Reprovado");
+			System.out.println("Voce foi Reprovado");
 		}
 	}
 	public static void main(String[] args) {
