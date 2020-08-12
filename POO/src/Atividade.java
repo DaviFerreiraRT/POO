@@ -13,6 +13,7 @@ public class Atividade {
 		System.out.println("A subtraçãoo deu " + (a - b));
 		System.out.println("A multiplicação deu " + (a * b));
 		System.out.println("A divisão deu " + c);
+		a
 	}
 
 	//
