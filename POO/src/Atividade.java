@@ -11,8 +11,8 @@ public class Atividade {
 		float c = a / (float) b;
 		System.out.println("A soma deu " + (a + b));
 		System.out.println("A subtraçãoo deu " + (a - b));
-		System.out.println("A multiplicação deu " + (a * b));
-		System.out.println("A divisão deu " + c);
+		System.out.println("A multiplicacao deu " + (a * b));
+		System.out.println("A divisao deu " + c);
 		a
 	}
 
@@ -23,7 +23,7 @@ public class Atividade {
 		System.out.print("Informe seu nome: ");
 		nome = ler.nextLine();
 		System.out.println("O meu nome é  " + nome);
-		System.out.print("Informe seu endereço: ");
+		System.out.print("Informe seu endereco: ");
 		endereco = ler.nextLine();
 		System.out.println("Eu moro em " + endereco);
 		System.out.print("Informe sua data de nascimento:");
@@ -46,7 +46,7 @@ public class Atividade {
 	public static void main(String[] args) {
 		int i;
 		Scanner ler = new Scanner(System.in);
-		System.out.print("Informe a questão a ser respondida: ");
+		System.out.print("Informe a questao a ser respondida: ");
 		i = ler.nextInt();
 		while (i != 0) {
 			if (i == 1) {
