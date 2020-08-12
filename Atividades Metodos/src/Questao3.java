@@ -24,6 +24,6 @@ public class Questao3 {
 			v[i] = ler.nextDouble();
 		}
 
-		System.out.println("A media é: " + somarArray(v));
+		System.out.println("A media Ã©: " + somarArray(v));
 	}
 }
