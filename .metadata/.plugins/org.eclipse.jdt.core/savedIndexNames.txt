@@ -5,14 +5,12 @@ INDEX VERSION 1.131+C:\Users\davif\eclipse-workspace\.metadata\.plugins\org.ecli
 1378015560.index
 4159925062.index
 2092250086.index
-1570852477.index
 1644613161.index
 1310736512.index
-1330774489.index
 2245724659.index
+1330774489.index
 2270713507.index
 991735649.index
-681370630.index
 1481432206.index
 4167196667.index
 3445611512.index
