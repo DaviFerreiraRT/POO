@@ -13,7 +13,7 @@ public class Atividade {
 		System.out.println("A subtraçãoo deu " + (a - b));
 		System.out.println("A multiplicacao deu " + (a * b));
 		System.out.println("A divisao deu " + c);
-		a
+		
 	}
 
 	//
@@ -22,7 +22,7 @@ public class Atividade {
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Informe seu nome: ");
 		nome = ler.nextLine();
-		System.out.println("O meu nome é  " + nome);
+		System.out.println("O seu nome é  " + nome);
 		System.out.print("Informe seu endereco: ");
 		endereco = ler.nextLine();
 		System.out.println("Eu moro em " + endereco);
