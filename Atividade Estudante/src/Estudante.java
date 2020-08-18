@@ -11,6 +11,7 @@ public class Estudante {
     }
 
     public Estudante() {
+
     }
 
     int matricula;
@@ -33,7 +34,7 @@ public class Estudante {
 
     void exibir(String titulo) {
         System.out.println(titulo);
-        exibir();
+        this.exibir();
     }
 
     void atribuirNota(int numProva, double nota) {
