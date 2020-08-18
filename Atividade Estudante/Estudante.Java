@@ -1,7 +1,5 @@
-Class Estudante{
-    
-    System.out.println("a")
-    public static void main(String[] args) {
-        
-    }
+public class Estudante {
+    int matricula;
+    String nome;
+    char sexo;
 }
