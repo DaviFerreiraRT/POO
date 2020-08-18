@@ -28,21 +28,12 @@ public class Estudante {
             System.out.println("Todas as notas do aluno(a)=" + this.notas[i]);
         }
         double media = soma / notas.length;
-        System.out.println("A média do aluno é= " + media);
+        System.out.println("A média do aluno(a) é= " + media);
     }
 
     void exibir(String titulo) {
         System.out.println(titulo);
-        System.out.println("Matricula do aluno(a)= " + this.matricula);
-        System.out.println("Nome do aluno(a)= " + this.nome);
-        System.out.println("Sexo do aluno(a)= " + this.sexo);
-        double soma = 0;
-        for (int i = 0; i < notas.length; i++) {
-            soma += notas[i];
-            System.out.println("Todas as notas do aluno(a)=" + this.notas[i]);
-        }
-        double media = soma / notas.length;
-        System.out.println("A média do aluno é= " + media);
+        exibir();
     }
 
     void atribuirNota(int numProva, double nota) {
