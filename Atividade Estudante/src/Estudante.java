@@ -4,17 +4,20 @@ public class Estudante {
     char sexo;
     double[] notas = new double[4];
 
-    void atribuirNota(int numProva, double nota) {
-        for (int i = 0; i < numProva-1; i++) {
-            nota = notas[i];
-        }
-    System.out.println(numProva);
-    }
-
     void exibir() {
-        System.out.println("Matricula do aluno(a)= " + matricula);
-        System.out.println("Nome do aluno(a)= " + nome);
-        System.out.println("Sexo do aluno(a)= " + sexo);
+        System.out.println("Matricula do aluno(a)= " + this.matricula);
+        System.out.println("Nome do aluno(a)= " + this.nome);
+        System.out.println("Sexo do aluno(a)= " + this.sexo);
+        for (int i = 0; i < notas.length; i++) {
+            System.out.println("Notas do aluno(a)=" + this.notas[i]);
+        }
     }
 
+    void atribuirNota(int numProva, double nota) {
+        this.notas[numProva - 1] = nota;
+    }
+
+    double lerNota(int numProva) {
+        return this.notas[numProva - 1];
+    }
 }
