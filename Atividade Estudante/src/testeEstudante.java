@@ -14,10 +14,10 @@ public class testeEstudante {
         // e.exibir();
         e.exibir("DADOS DO ESTUDANTE");
 
-        Estudante a1 = new Estudante("Davi Ferreira",'M');
-    
+        Estudante a1 = new Estudante("Davi Ferreira", 'M');
+
         a1.matricula = 1919100;
-        
+
         a1.atribuirNota(1, 7.0);
         a1.atribuirNota(2, 5.0);
         a1.atribuirNota(3);
@@ -26,13 +26,13 @@ public class testeEstudante {
         // a1.exibir();
         a1.exibir("DADOS DO ESTUDANTE");
 
-        Estudante a2 = new Estudante("Emily Lima", 'F',25052019);
+        Estudante a2 = new Estudante("Emily Lima", 'F', 25052019);
 
         a2.atribuirNota(1, 7.0);
         a2.atribuirNota(2, 5.0);
         a2.atribuirNota(3);
         a2.atribuirNota(4, 8.5);
-        
+
         // a2.exibir();
         a2.exibir("DADOS DO ESTUDANTE");
 
