@@ -41,12 +41,12 @@ public class Estudante {
         this.notas[numProva - 1] = nota;
 
     }
-
     void atribuirNota(int indice) {
         this.notas[indice] = 0.0;
     }
 
     double lerNota(int numProva) {
         return this.notas[numProva - 1];
+        
     }
 }
