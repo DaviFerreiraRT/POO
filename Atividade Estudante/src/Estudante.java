@@ -19,7 +19,7 @@ public class Estudante {
     char sexo;
     double[] notas = new double[4];
 
-    void exibir() {
+    public void exibir() {
         System.out.println("Matricula do aluno(a)= " + this.matricula);
         System.out.println("Nome do aluno(a)= " + this.nome);
         System.out.println("Sexo do aluno(a)= " + this.sexo);
@@ -32,16 +32,16 @@ public class Estudante {
         System.out.println("A média do aluno(a) é= " + media);
     }
 
-    void exibir(String titulo) {
+    public void exibir(String titulo) {
         System.out.println(titulo);
         this.exibir();
     }
 
-    void atribuirNota(int numProva, double nota) {
+    public  void atribuirNota(int numProva, double nota) {
         this.notas[numProva - 1] = nota;
 
     }
-    void atribuirNota(int indice) {
+    public void atribuirNota(int indice) {
         this.notas[indice] = 0.0;
     }
 
