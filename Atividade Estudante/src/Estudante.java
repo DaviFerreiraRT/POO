@@ -42,7 +42,7 @@ public class Estudante {
     }
 
     public void atribuirNota(int indice) {
-        this.notas[indice] = 0.0;
+        this.notas[indice-1] = 0.0;
     }
 
     public double lerNota(int numProva) {
