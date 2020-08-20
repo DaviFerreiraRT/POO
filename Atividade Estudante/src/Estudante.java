@@ -1,4 +1,10 @@
 public class Estudante {
+    int matricula;
+    String nome;
+    char sexo;
+    double[] notas = new double[4];
+
+    
     public Estudante(String nom, char sex, int matri) {
         this.matricula = matri;
         this.nome = nom;
@@ -14,10 +20,6 @@ public class Estudante {
 
     }
 
-    int matricula;
-    String nome;
-    char sexo;
-    double[] notas = new double[4];
 
     public void exibir() {
         System.out.println("Matricula do aluno(a)= " + this.matricula);
