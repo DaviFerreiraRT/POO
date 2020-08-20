@@ -39,7 +39,6 @@ public class Estudante {
 
     public void atribuirNota(int numProva, double nota) {
         this.notas[numProva - 1] = nota;
-
     }
 
     public void atribuirNota(int indice) {
@@ -48,6 +47,5 @@ public class Estudante {
 
     public double lerNota(int numProva) {
         return this.notas[numProva - 1];
-
     }
 }
