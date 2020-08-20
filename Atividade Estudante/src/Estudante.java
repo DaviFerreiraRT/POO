@@ -37,16 +37,17 @@ public class Estudante {
         this.exibir();
     }
 
-    public  void atribuirNota(int numProva, double nota) {
+    public void atribuirNota(int numProva, double nota) {
         this.notas[numProva - 1] = nota;
 
     }
+
     public void atribuirNota(int indice) {
         this.notas[indice] = 0.0;
     }
 
     double lerNota(int numProva) {
         return this.notas[numProva - 1];
-        
+
     }
 }
