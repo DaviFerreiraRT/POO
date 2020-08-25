@@ -19,7 +19,7 @@ public class Estudante {
 
     }
 
-    public void getExibir() {
+    public void Exibir() {
         System.out.println("Matricula do aluno(a)= " + this.matricula);
         System.out.println("Nome do aluno(a)= " + this.nome);
         System.out.println("Sexo do aluno(a)= " + this.sexo);
@@ -32,9 +32,9 @@ public class Estudante {
         System.out.println("A média do aluno(a) é= " + media);
     }
 
-    public void getExibir(String titulo) {
+    public void Exibir(String titulo) {
         System.out.println(titulo);
-        this.getExibir();
+        this.Exibir();
     }
 
     public void setNota(int numProva, double nota) {
@@ -45,28 +45,50 @@ public class Estudante {
         }
     }
 
-    public void setNota(int indice) {
+    /*public void setNota(int indice) {
         if (indice == 0) {
             this.notas[indice - 1] = 0.0;
         }
-    }
+    }*/
 
     public double getNota(int numProva) {
         return this.notas[numProva - 1];
     }
 
-    public int setMatricula(int matricula) {
-        return this.matricula = matricula;
+    public double setNota(int indice) {
+        return this.notas[indice - 1]=0.0;
+    }
+
+    public void setMatricula(int matricula) {
+        if (matricula > 0) {
+            this.matricula = matricula;
+        }
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setSexo(char sexo) {
+        if (sexo == 'M' && sexo == 'F') {
+            this.sexo = sexo;
+        } else {
+            System.out.println("Sexo inválido");
+        }
+    }
+
+    public char getSexo() {
+        return sexo;
     }
 
     public void setNome(String nome) {
-        if(nome!=null){
-            this.nome=nome;
-        };
-    }
-
-    public char setSexo(char sexo) {
-        return this.sexo = sexo;
+        if (nome != null) {
+            this.nome = nome;
+        }
     }
 
 }
