@@ -1,14 +1,12 @@
 public class testeEstudante {
 
     public static void main(String[] args) {
-        Estudante e = new Estudante();
+        Estudante e = new Estudante("Maria",'F',202020);
         /*e.matricula = 2004001;
         e.nome = "Maria Silva";
         e.sexo = 'F';*/
 
         e.setMatricula(2004001);
-        e.setNome("Maria Silva");
-        e.setSexo('F');
         e.setNota(1, 7.0);
         e.setNota(2, 8.2);
         e.setNota(3, 6.0);
