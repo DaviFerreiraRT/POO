@@ -1,7 +1,7 @@
 public class Estudante {
-    int matricula;
-    String nome;
-    char sexo;
+    private int matricula;
+    private String nome;
+    private char sexo;
     double[] notas = new double[4];
 
     
@@ -21,7 +21,7 @@ public class Estudante {
     }
 
 
-    public void exibir() {
+    public void getExibir() {
         System.out.println("Matricula do aluno(a)= " + this.matricula);
         System.out.println("Nome do aluno(a)= " + this.nome);
         System.out.println("Sexo do aluno(a)= " + this.sexo);
@@ -34,20 +34,27 @@ public class Estudante {
         System.out.println("A média do aluno(a) é= " + media);
     }
 
-    public void exibir(String titulo) {
+    public void getExibir(String titulo) {
         System.out.println(titulo);
-        this.exibir();
+        this.getExibir();
     }
 
-    public void atribuirNota(int numProva, double nota) {
+    public void setNota(int numProva, double nota) {
+        if(nota>=1 && nota<=10){
         this.notas[numProva - 1] = nota;
     }
+    else{
+        System.out.println("Nota inválida");
+    }
+}
 
-    public void atribuirNota(int indice) {
+    public void setNota(int indice) {
+        if(indice==0){
         this.notas[indice-1] = 0.0;
     }
+}
 
-    public double lerNota(int numProva) {
+    public double getNota(int numProva) {
         return this.notas[numProva - 1];
     }
 }
