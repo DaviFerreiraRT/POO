@@ -6,25 +6,27 @@ public class testeEstudante {
         e.nome = "Maria Silva";
         e.sexo = 'F';*/
 
+        e.setMatricula(2004001);
+        e.setNome("Maria Silva");
+        e.setSexo('F');
         e.setNota(1, 7.0);
         e.setNota(2, 8.2);
         e.setNota(3, 6.0);
         e.setNota(4, 5.5);
 
         // e.exibir();
-        e.getExibir("DADOS DO ESTUDANTE");
+        e.getExibir("DADOS DO ESTUDANTE 1 ");
 
         Estudante a1 = new Estudante("Davi Ferreira", 'M');
-
+        a1.setMatricula(1919100);
        // a1.matricula = 1919100;
-
         a1.setNota(1, 7.0);
         a1.setNota(2, 5.0);
         a1.setNota(3);
         a1.setNota(4, 8.5);
 
         // a1.exibir();
-        a1.getExibir("DADOS DO ESTUDANTE");
+        a1.getExibir("DADOS DO ESTUDANTE 2 ");
 
         Estudante a2 = new Estudante("Emily Lima", 'F', 25052019);
 
@@ -34,7 +36,7 @@ public class testeEstudante {
         a2.setNota(4, 8.5);
 
         // a2.exibir();
-        a2.getExibir("DADOS DO ESTUDANTE");
+        a2.getExibir("DADOS DO ESTUDANTE 3 ");
 
     }
 }
