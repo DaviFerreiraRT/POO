@@ -1,7 +1,14 @@
 public class Data {
-    public Data (int x){
-        x=ano;
+
+    // Variaveis de instancia;
+    private int dia;
+    private int mes;
+    private int ano;
+
+    public Data(int x) {
+        x = ano;
     }
+
     public Data(int m, int n, int p) {
         dia = m;
         mes = n;
@@ -14,10 +21,41 @@ public class Data {
         ano = 2015;
     }
 
-    // Variaveis de instancia;
-    int dia;
-    int mes;
-    int ano;
+    public void setDia(int dia) {
+        if (dia >= 1 && dia <= 31) {
+            this.dia = dia;
+        } else {
+            System.out.println("Dia invalido");
+        }
+    }
+
+    public void setMes(int mes) {
+        if (mes > 0 && mes <= 12) {
+            this.mes = mes;
+        } else {
+            System.out.println("Mes invalido");
+        }
+    }
+
+    public void setAno(int ano) {
+        if (ano >= 0) {
+            this.ano = ano;
+        } else {
+            System.out.println("Ano invalido");
+        }
+    }
+
+    public int getDia() {
+        return dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
 
     // Metodos
     public void exibir(String Mensagem) {
@@ -43,4 +81,5 @@ public class Data {
     void incrementarAno() {
         ano++;
     }
+
 };
