@@ -59,8 +59,10 @@ public class Estudante {
         return this.matricula = matricula;
     }
 
-    public String setNome(String nome) {
-        return this.nome = nome;
+    public void setNome(String nome) {
+        if(nome!=null){
+            this.nome=nome;
+        };
     }
 
     public char setSexo(char sexo) {
