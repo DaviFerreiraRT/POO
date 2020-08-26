@@ -45,23 +45,28 @@ public class Estudante {
         }
     }
 
-    /*public void setNota(int indice) {
-        if (indice == 0) {
-            this.notas[indice - 1] = 0.0;
-        }
-    }*/
-
-    public double getNota(int numProva) {
-        return this.notas[numProva - 1];
-    }
-
     public double setNota(int indice) {
-        return this.notas[indice - 1]=0.0;
+        return this.notas[indice - 1] = 0.0;
     }
 
     public void setMatricula(int matricula) {
         if (matricula > 0) {
             this.matricula = matricula;
+        }
+    }
+
+    public void setSexo(char sexo) {
+        if (sexo == 'M' && sexo == 'F') {
+            this.sexo = sexo;
+        } 
+    }
+
+    public void setNome(String nome) {
+        if (nome != null) {
+            this.nome = nome;
+        } 
+        else {
+            System.out.println("Nenhum nome foi informado.");
         }
     }
 
@@ -73,22 +78,12 @@ public class Estudante {
         return nome;
     }
 
-    public void setSexo(char sexo) {
-        if (sexo == 'M' && sexo == 'F') {
-            this.sexo = sexo;
-        } else {
-            System.out.println("Sexo inválido");
-        }
-    }
-
     public char getSexo() {
         return sexo;
     }
 
-    public void setNome(String nome) {
-        if (nome != null) {
-            this.nome = nome;
-        }
+    public double getNota(int numProva) {
+        return this.notas[numProva - 1];
     }
 
 }

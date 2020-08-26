@@ -24,10 +24,7 @@ public class testeEstudante {
         a1.setNota(4, 8.5);
 
         // a1.exibir();
-        //a1.Exibir("DADOS DO ESTUDANTE 2 ");
-        System.out.println("Nome="+a1.getNome());
-        System.out.println("Matricula="+a1.getMatricula());
-        System.out.println("Sexo="+a1.getSexo());
+        a1.Exibir("DADOS DO ESTUDANTE 2 "); 
         Estudante a2 = new Estudante("Emily Lima", 'F', 25052019);
 
         a2.setNota(1, 7.0);
@@ -37,6 +34,8 @@ public class testeEstudante {
         System.out.println("MATRICULA COM GET="+a2.getMatricula());
         System.out.println("NOME COM GET="+a2.getNome());
         System.out.println("SEXO COM GET="+a2.getSexo());
+        
+        //sem get
         a2.Exibir("DADOS DO ESTUDANTE 3 ");
     }
 }
