@@ -37,5 +37,9 @@ public class testeEstudante {
         
         //sem get
         a2.Exibir("DADOS DO ESTUDANTE 3 ");
+
+        Curso curso=new Curso("Sistemas de Informação","GSI",3160);
+        curso.exibir();
+        e.setMeuCurso(curso);
     }
 }

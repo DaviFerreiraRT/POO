@@ -3,6 +3,7 @@ public class Estudante {
     private String nome;
     private char sexo;
     private double[] notas = new double[4];
+    Curso meuCurso;
 
     public Estudante(String nom, char sex, int matri) {
         this.matricula = matri;
@@ -30,7 +31,12 @@ public class Estudante {
         }
         double media = soma / notas.length;
         System.out.println("A média do aluno(a) é= " + media);
+        if(meuCurso!=null){
+            meuCurso.exibir();
+        }
     }
+
+
 
     public void Exibir(String titulo) {
         System.out.println(titulo);
@@ -84,6 +90,12 @@ public class Estudante {
 
     public double getNota(int numProva) {
         return this.notas[numProva - 1];
+    }
+    public Curso getMeuCurso(){
+        return meuCurso;
+    }
+    public void setMeuCurso(Curso curso){
+        meuCurso=curso;
     }
 
 }
