@@ -4,7 +4,7 @@ public class Estudante {
     private char sexo;
     private double[] notas = new double[4];
     Curso meuCurso;
-    Disciplina[]materia=new Disciplina[5];
+    Disciplina[] materia = new Disciplina[5];
 
     public Estudante(String nom, char sex, int matri) {
         this.matricula = matri;
@@ -26,18 +26,17 @@ public class Estudante {
         System.out.println("Nome do aluno(a)= " + this.nome);
         System.out.println("Sexo do aluno(a)= " + this.sexo);
         double soma = 0;
-        for (int i = 0; i < notas.length; i++) {
-            soma += notas[i];
-            System.out.println("Todas as notas do aluno(a)=" + this.notas[i]);
+        // NOVO FORMATO DE FAZER FOR
+        for (double teste : notas) {
+            soma += teste;
+            System.out.println("Todas as notas do aluno(a)=" + teste);
         }
         double media = soma / notas.length;
         System.out.println("A média do aluno(a) é= " + media);
-        if(meuCurso!=null){
+        if (meuCurso != null) {
             meuCurso.exibir();
         }
     }
-
-
 
     public void Exibir(String titulo) {
         System.out.println(titulo);
@@ -65,14 +64,13 @@ public class Estudante {
     public void setSexo(char sexo) {
         if (sexo == 'M' && sexo == 'F') {
             this.sexo = sexo;
-        } 
+        }
     }
 
     public void setNome(String nome) {
         if (nome != null) {
             this.nome = nome;
-        } 
-        else {
+        } else {
             System.out.println("Nenhum nome foi informado.");
         }
     }
@@ -92,11 +90,13 @@ public class Estudante {
     public double getNota(int numProva) {
         return this.notas[numProva - 1];
     }
-    public Curso getMeuCurso(){
+
+    public Curso getMeuCurso() {
         return meuCurso;
     }
-    public void setMeuCurso(Curso curso){
-        meuCurso=curso;
+
+    public void setMeuCurso(Curso curso) {
+        meuCurso = curso;
     }
 
 }
