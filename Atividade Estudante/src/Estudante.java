@@ -4,6 +4,7 @@ public class Estudante {
     private char sexo;
     private double[] notas = new double[4];
     Curso meuCurso;
+    Disciplina[]materia=new Disciplina[5];
 
     public Estudante(String nom, char sex, int matri) {
         this.matricula = matri;
