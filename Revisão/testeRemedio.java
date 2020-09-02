@@ -16,8 +16,13 @@ public class testeRemedio {
         
         teste1.aumentarPreco(20.0);
         teste1.imprimir();
-        
-         Remedio teste2=new Remedio(12356,"Nimesulida","20/07/2020",90);
+
+         Remedio teste2=new Remedio(12356,"Nimesulida","20/07/2020",90,7.50);
+         teste2.imprimir();
+
+        Remedio teste3= new Remedio(1453,"Dorflex","25/07/2019",120);
+        teste3.imprimir();
+
       }
     
 }
