@@ -1,4 +1,4 @@
-public class Teste {
+public class testeData {
     public static void main(String[] args) {
         Data hoje = new Data();
         /*
@@ -35,7 +35,7 @@ public class Teste {
         hoje.incrementarAno(3);
         hoje.exibir("Depois de incrementar 3 anos");
 
-        Data nova = new Data(18, 8, 2020);
+        Data nova = new Data(23,03,2002);
 
         nova.exibir("Nova data");
 

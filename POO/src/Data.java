@@ -16,9 +16,9 @@ public class Data {
     }
 
     public Data() {
-        dia = 14;
-        mes = 5;
-        ano = 2015;
+        dia = 1;
+        mes = 1;
+        ano = 1;
     }
 
     public void setDia(int dia) {
