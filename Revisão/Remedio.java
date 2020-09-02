@@ -40,10 +40,11 @@ public class Remedio {
         System.out.println("O novo valor do remédio é :" + preco);
     }
 
-    public boolean ehValido(int validade) {
-        if (this.validade <= validade) {
+    public boolean ehValido(int data) {
+        if (this.validade <= data) {
             return true;
         } else {
+            
             return false;
         }
     }

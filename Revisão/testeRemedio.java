@@ -7,7 +7,16 @@ public class testeRemedio {
         teste1.reduzirPreco(10.60);
         teste1.setValidade(5);
         teste1.imprimir();
+        if(teste1.ehValido(2)){
+            System.out.println("É valido");
+        }
+        else{
+            System.out.println("Não é válido");
+        }
         
+        teste1.aumentarPreco(20.0);
+        teste1.imprimir();
+         Remedio teste2=new Remedio(12356,"Nimesulida","20/07/2020",90,)
       }
     
 }
