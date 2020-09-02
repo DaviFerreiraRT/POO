@@ -7,7 +7,7 @@ public class Remedio {
     private double preco;
 
     public Remedio(){
-
+        
     }
 
     public Remedio(int codigo, String nome){
