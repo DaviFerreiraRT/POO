@@ -1,5 +1,6 @@
 public class testeRemedio {
-    
-    Remedio teste = new Remedio();
-    
+    public static void main(String[] args) {
+        Remedio teste = new Remedio();
+        System.out.println("teste");
+    }     
 }
