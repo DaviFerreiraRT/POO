@@ -21,19 +21,29 @@ public class Pessoa {
         this.idade = id;
 
     }
+    public Pessoa(String nom, String ender,String tel, int id) {
+        this.nome = nom;
+        this.endereco=ender;
+        this.telephone = tel;
+        this.idade = id;
+
+
+    }
 
     public void mostrar() {
+        if(carro!=null){
         System.out.println("Nome da pessoa é: " + nome);
         System.out.println("Endereço da pessoa: " + endereco);
         System.out.println("Telefone da pessoa: " + telephone);
         System.out.println("Idade da pessoa: " + idade);
+        carro.visualizar();
     }
+    else{
+        System.out.println("Nenhum carro encontrado! ");
+    }
+}
 
 
-    public void Adicionar(Carro carro) {
-        
-    }
-    
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;

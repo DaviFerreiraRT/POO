@@ -12,7 +12,7 @@ public class Carro {
         this.placa=pla;
     }
 
-    public Carro(String mod, String pla,int aa, int val){
+    public Carro(String mod, String pla,int aa, double val){
         this.modelo=mod;
         this.placa=pla;
         this.ano=aa;
@@ -25,8 +25,10 @@ public class Carro {
     }
 
     public void visualizar(){
-        System.out.println("Modelo do carro:"+modelo+" e ano do veiculo: "+ano+" com placa: "+placa);
-        System.out.println("O preço deste carro é de: "+valor+" reais.");
+        System.out.println("Modelo do carro: "+modelo);
+        System.out.println("Ano do carro: "+ano);
+        System.out.println("Placa do veiculo: "+placa);
+        System.out.println("Valor do veiculo:"+ valor);
     }
 
 
