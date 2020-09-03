@@ -1,7 +1,7 @@
 public class País {
     private String nome;
     private String continente;
-    private Presidente novoPresidente = new Presidente("Kiko", "25/05/2005");
+    private Presidente novoPresidente;
 
     public País() {
     }

@@ -11,7 +11,7 @@ public class testePresidente {
         pais.setNovoPresidente(novoPresid);
         System.out.println("NOVO PRESIDENTE");
         pais.exibir();
-    
+
     }
 
 }
