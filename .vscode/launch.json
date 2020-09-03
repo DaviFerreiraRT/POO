@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testeCarroPessoa",
+            "request": "launch",
+            "mainClass": "testeCarroPessoa",
+            "projectName": "eclipse-workspace_a327ba57"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
