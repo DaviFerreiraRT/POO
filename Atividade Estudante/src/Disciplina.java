@@ -14,7 +14,7 @@ public class Disciplina {
     public void incluirEstudante(Estudante e){
 
     }
-   /* public void setNome(String nome) {
+    public void setNome(String nome) {
 
         this.nome = nome;
 
@@ -42,7 +42,7 @@ public class Disciplina {
 
     public int getCargaHoraria() {
         return cargaHoraria;
-    }*/
+    }
     
     public void exibirEstudantes(){
         System.out.println("--------- DADOS DO ESTUDANTE----------");
