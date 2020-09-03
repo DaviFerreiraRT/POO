@@ -19,7 +19,7 @@ public class Cargo {
     public void imprimir(){
         System.out.println("Nome do cargo: "+nome);
         System.out.println("Codigo do cargo: "+codigo);
-        System.out.println("Salario base do cargo: "+salarioBase);
+        System.out.println("Salario base do cargo:R$"+salarioBase);
     }
 
     public void setNome(String nome) {

@@ -21,12 +21,12 @@ public class Funcionario {
     public void mostrar() {
         System.out.println("Nome do funcionário: " + nome);
         System.out.println("Matricula do funcionário: " + matricula);
-        System.out.println("Salário do funcionário: " + salario);
+        System.out.println("Salário do funcionário:R$" + salario);
         if(cargo!=null){
             cargo.imprimir();
         }
         else{
-            System.out.println("Funcionario sem nenhum cargo alocado");
+            System.out.println("Funcionario sem nenhum cargo alocado!");
         }
     }
 
