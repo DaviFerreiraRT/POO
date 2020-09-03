@@ -6,5 +6,13 @@ public class testeCarroPessoa {
         proprietario.setCarro(carro);
         carro.aplicarDesconto(5);
         proprietario.mostrar();
+
+
+        Pessoa Vini=new Pessoa("Vinicius","Russia Brasileira","9696969696",19);
+        Carro carrovini = new Carro("TTS","CUS6969",2020,80.000);
+        
+        Vini.setCarro(carrovini);
+        carrovini.aplicarDesconto(35);
+        Vini.mostrar();
         }
 }
