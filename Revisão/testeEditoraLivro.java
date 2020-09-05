@@ -4,7 +4,7 @@ public class testeEditoraLivro {
         Editora editora = new Editora("JK ROLLING","London, UK",245748);
         livro.setEditora(editora);
         livro.getEditora().setEndereco("Manchester,UK ");
-        System.out.println(livro.getEditora().getCnpj());
+        System.out.println("CNPJ da Empresa: "+livro.getEditora().getCnpj());
 
         Livro livro2 = new Livro("Revolução dos Bichos",7575,0);
         livro2.exibir();
