@@ -7,5 +7,13 @@ public class testeFuncionarioCargo {
         funci1.mostrar();
         funci1.setCargo(cargo1);
         funci1.mostrar();
+        Cargo cargo2=new Cargo("Analista",2,800);
+        Funcionario funci2=new Funcionario("Vinicius Lavor",2546,1500);
+        funci2.mudarSalario(2200);
+        funci2.setCargo(cargo2);
+        funci2.mostrar();
+
+
+
     }
 }
