@@ -3,9 +3,8 @@ public class testeEditoraLivro {
         Livro livro= new Livro("Harry Potter, A Ordem da Fênix",6969,50.0);
         Editora editora = new Editora("JK ROLLING","LONDRES",245748);
         livro.setEditora(editora);
-        editora.alterarEndereco("AHDUSADSA");
         livro.exibir();
-
-        
+        livro.getEditora().setEndereco("AKSJNDGBLASKJDBGVKJASGBDLAKSJGBDJKLASD");
+        livro.exibir();
     }
 }

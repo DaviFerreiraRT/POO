@@ -19,9 +19,6 @@ public class Editora {
         System.out.println("Endereco da editora: "+endereco);
         System.out.println("CNPJ da editora: "+cnpj);
     }
-    public void alterarEndereco(String novoEndereco){
-        this.endereco=novoEndereco;
-    }
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
