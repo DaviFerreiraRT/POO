@@ -12,7 +12,9 @@ public class testeFuncionarioCargo {
         funci2.mudarSalario(2200);
         funci2.setCargo(cargo2);
         funci2.mostrar();
+        
 
+        
 
 
     }
