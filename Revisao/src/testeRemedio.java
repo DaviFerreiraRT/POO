@@ -39,7 +39,7 @@ public class testeRemedio {
             System.out.println("O remedio ainda esta no prazo de validade!");
         } 
         else {
-            System.out.println("O remedio esta fora do prazo de validade!");
+            System.out.println("O remedio estaa fora do prazo de validade!");
         }
         teste3.imprimir();
 
