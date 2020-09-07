@@ -23,11 +23,11 @@ public class Func {
     }
     public boolean ehAposentado(boolean aposentado){
         if(aposentado){
-            System.out.println("Funcionário aposentando");
+            System.out.println("Funcionario aposentando");
             return true;
         }
         else{
-            System.out.println("Funcionário não é aposentado");
+            System.out.println("Funcionario nao eh aposentado");
             return false;
         }
     }

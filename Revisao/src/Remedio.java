@@ -53,11 +53,11 @@ public class Remedio {
     }
 
     public void imprimir() {
-        System.out.println("O codigo do produto é :" + codigo);
-        System.out.println("O nome do produto é :" + nome);
-        System.out.println("A data do produto é " + dataDeFabricacao);
-        System.out.println("O preço do produto é de R$ " + preco);
-        System.out.println("A validade do produto é de " + validade + " dias");
+        System.out.println("O codigo do produto eh :" + codigo);
+        System.out.println("O nome do produto eh :" + nome);
+        System.out.println("A data do produto eh " + dataDeFabricacao);
+        System.out.println("O preco do produto eh de R$ " + preco);
+        System.out.println("A validade do produto eh de " + validade + " dias");
 
     }
 

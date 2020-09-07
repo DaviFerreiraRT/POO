@@ -9,10 +9,10 @@ public class testeRemedio {
         teste1.setValidade(5);
         teste1.imprimir();
         if (teste1.ehValido(2)) {
-            System.out.println("O rem�dio ainda est� no prazo de validade!");
+            System.out.println("O remedio ainda esta no prazo de validade!");
         } 
         else {
-            System.out.println("O rem�dio est� fora do prazo de validade");
+            System.out.println("O remedio esta fora do prazo de validade");
         }
 
         teste1.aumentarPreco(20.0);
@@ -23,10 +23,10 @@ public class testeRemedio {
         System.out.println("-------SEGUNDO REMEDIO---------------");
         teste2.aumentarPreco(10);
         if (teste2.ehValido(20)) {
-            System.out.println("O rem�dio ainda est� no prazo de validade!");
+            System.out.println("O remedio ainda esta no prazo de validade!");
         } 
         else {
-            System.out.println("O rem�dio est� fora do prazo de validade!");
+            System.out.println("O remedio esta fora do prazo de validade!");
         }
 
         teste2.imprimir();
@@ -36,10 +36,10 @@ public class testeRemedio {
         teste3.setPreco(5.50);
         teste3.aumentarPreco(20);
         if (teste3.ehValido(10)) {
-            System.out.println("O rem�dio ainda est� no prazo de validade!");
+            System.out.println("O remedio ainda esta no prazo de validade!");
         } 
         else {
-            System.out.println("O rem�dio est� fora do prazo de validade!");
+            System.out.println("O remedio esta fora do prazo de validade!");
         }
         teste3.imprimir();
 

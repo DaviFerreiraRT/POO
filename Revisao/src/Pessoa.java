@@ -31,14 +31,14 @@ public class Pessoa {
     }
 
     public void mostrar() {
-        System.out.println("Nome da pessoa é: " + nome);
-        System.out.println("Endereço da pessoa: " + endereco);
+        System.out.println("Nome da pessoa eh: " + nome);
+        System.out.println("Endereco da pessoa: " + endereco);
         System.out.println("Telefone da pessoa: " + telephone);
         System.out.println("Idade da pessoa: " + idade);
         if (carro != null) {
             carro.visualizar();
         } else {
-            System.out.println("Essa pessoa não tem nenhum veiculo cadastrado! ");
+            System.out.println("Essa pessoa nao tem nenhum veiculo cadastrado! ");
         }
     }
 
