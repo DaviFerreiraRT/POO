@@ -19,9 +19,9 @@ public class Funcionario {
     }
 
     public void mostrar() {
-        System.out.println("Nome do funcionÃ¡rio: " + nome);
-        System.out.println("Matricula do funcionÃ¡rio: " + matricula);
-        System.out.println("SalÃ¡rio do funcionÃ¡rio:R$" + salario);
+        System.out.println("Nome do funcionário: " + nome);
+        System.out.println("Matricula do funcionário: " + matricula);
+        System.out.println("Salário do funcionário:R$" + salario);
         if(cargo!=null){
             cargo.imprimir();
         }
