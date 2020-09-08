@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Programa",
+            "request": "launch",
+            "mainClass": "Programa",
+            "projectName": "Prova (2)"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testeCarroPessoa",
             "request": "launch",
             "mainClass": "testeCarroPessoa",
