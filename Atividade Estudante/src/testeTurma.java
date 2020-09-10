@@ -26,6 +26,7 @@ public class testeTurma {
      poo.trancarEstudante(estudante);
     
      poo.exibir();
+    
 
     
  }   
