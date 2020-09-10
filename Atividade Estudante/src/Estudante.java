@@ -98,5 +98,16 @@ public class Estudante {
     public void setMeuCurso(Curso curso) {
         meuCurso = curso;
     }
-
+    public Disciplina[] getMateria() {
+        return materia;
+    }
+    public double[] getNotas() {
+        return notas;
+    }
+    public void setMateria(Disciplina[] materia) {
+        this.materia = materia;
+    }
+    public void setNotas(double[] notas) {
+        this.notas = notas;
+    }
 }

@@ -8,9 +8,9 @@ public class testeTurma {
      estudante.setNota(3,8.5);
      estudante.setNota(4,10);
      poo.matricular(estudante);
-     estudante=new Estudante ("Davi",'M');
-     estudante.setMatricula(1);
-     poo.matricular(estudante);
+     Estudante estudante2=new Estudante ("Davi",'M');
+     estudante2.setMatricula(1);
+     poo.matricular(estudante2);
      
      /*Estudante segundoEstudante = new Estudante("Davi",'M');
      poo.matricular(segundoEstudante);*/
@@ -18,11 +18,14 @@ public class testeTurma {
 
      poo.pesquisar(5);
      poo.pesquisar(1);
-     poo.trancar(5);
+     //poo.trancar(5);
      poo.exibir();
-     poo.trancar(1);
-     poo.exibir();
+     poo.trancarMatricula(1);
+     //poo.exibir();
     
+     poo.trancarEstudante(estudante);
+    
+     poo.exibir();
 
 
      

@@ -57,7 +57,7 @@ public class Turma {
         return null;
     }
 
-    public void trancar(int matricula) {
+    public void trancarMatricula(int matricula) {
         boolean matriculaExiste = false;
         int index = 0;
 
@@ -73,14 +73,36 @@ public class Turma {
         if (matriculaExiste) {
             for (int i = index; i < estudantes.length - 1; i++) {
                 estudantes[i] = estudantes[i + 1];
-                
+
             }
             estudantes[estudantes.length - 1] = null;
             numEstudantes--;
-        }
-        else{
+        } else {
             System.out.println("Matricula não existe! ");
         }
-        
+
+    }
+
+    public void trancarEstudante(Estudante e) {
+        boolean estudanteExiste = false;
+        int index = 0;
+        for (int i = 0; i < estudantes.length; i++) {
+            if (estudantes[i] == e) {
+                estudanteExiste = true;
+                index = i;
+                break;
+
+            }
+        }
+        if (estudanteExiste) {
+            for (int i = index; i < estudantes.length - 1; i++) {
+                estudantes[i] = estudantes[i + 1];
+            }
+            estudantes[estudantes.length - 1] = null;
+            numEstudantes--;
+            System.out.println("Estudante com matricula " + e.getMatricula() + " apagada êxito!");
+        } else {
+            System.out.println("Estudante não encontrado! ");
+        }
     }
 }
