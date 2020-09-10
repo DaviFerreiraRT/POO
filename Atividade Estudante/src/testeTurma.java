@@ -19,7 +19,7 @@ public class testeTurma {
      poo.pesquisar(5);
      poo.pesquisar(1);
      poo.trancar(5);
-     //poo.exibir();
+     poo.exibir();
      poo.trancar(1);
      poo.exibir();
     
