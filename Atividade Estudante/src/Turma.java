@@ -57,7 +57,7 @@ public class Turma {
         return null;
     }
 
-    public void trancarMatricula(int matricula) {
+    public void trancar(int matricula) {
         boolean matriculaExiste = false;
         int index = 0;
 
@@ -83,7 +83,7 @@ public class Turma {
 
     }
 
-    public void trancarEstudante(Estudante e) {
+    public void trancar(Estudante e) {
         boolean estudanteExiste = false;
         int index = 0;
         for (int i = 0; i < estudantes.length; i++) {

@@ -20,10 +20,11 @@ public class testeTurma {
      poo.pesquisar(1);
      //poo.trancar(5);
      poo.exibir();
-     poo.trancarMatricula(1);
+     poo.trancar(1);
      //poo.exibir();
     
-     poo.trancarEstudante(estudante);
+     poo.trancar(estudante);
+     poo.trancar(estudante2);
     
      poo.exibir();
     
