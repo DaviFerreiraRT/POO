@@ -31,12 +31,16 @@ public class Pessoa {
         this.idade = id;
 
     }
-
-    public void listar() {
-        System.out.println("Nome da pessoa eh: " + nome);
-        System.out.println("Endereco da pessoa: " + endereco);
-        System.out.println("Telefone da pessoa: " + telephone);
-        System.out.println("Idade da pessoa: " + idade);
+    public void listar(){
+        if(carros!=null){
+            mostrar();
+        }
+    }
+    public void mostrar() {
+        System.out.println("Nome do(a) proprietario eh: " + nome);
+        System.out.println("Endereco do(a) proprietario: " + endereco);
+        System.out.println("Telefone do(a) proprietario: " + telephone);
+        System.out.println("Idade do(a) proprietario: " + idade);
         if (carros != null) {
             for (int i = 0; i < carros.length; i++) {
                 if (carros[i] != null) {
