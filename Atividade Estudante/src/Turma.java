@@ -49,7 +49,7 @@ public class Turma {
     public Estudante pesquisar(int matricula) {
         for (int i = 0; i < numEstudantes; i++) {
             if (estudantes[i] != null && estudantes[i].getMatricula() == matricula) {
-                System.out.println("Numero da matricula encontrada! \nNr da matricula requsitada: " + matricula);
+                System.out.println("Numero da matricula encontrada!\nNr da matricula requsitada: " + matricula);
                 return estudantes[i];
             }
         }
@@ -62,7 +62,7 @@ public class Turma {
         int index = 0;
 
         for (int i = 0; i < numEstudantes; i++) {
-            if (estudantes[i].getMatricula() == matricula) {
+            if (estudantes[i] != null && estudantes[i].getMatricula() == matricula) {
                 matriculaExiste = true;
                 index = i;
                 break;

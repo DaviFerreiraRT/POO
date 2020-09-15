@@ -1,10 +1,21 @@
 public class testeCarroPessoa {
     public static void main(String[] args) {
         Pessoa proprietario = new Pessoa("Davi", "Cascavel", "(85)996895225", 20);
-        Carro carro = new Carro("Huracan", "AEX-4542", 2015, 75.000);
-
-        proprietario.setCarro(carro);
-        carro.aplicarDesconto(5);
+        Carro novoCarro = new Carro("Huracan", "AEX-4542", 2015, 75.000);
+        
+        proprietario.adicionar(novoCarro);
+        novoCarro.aplicarDesconto(10);
+       // proprietario.mostrar();
+        //System.out.println("---- APOS REMOVIDO O VEICULO DO PROPRIETARIO ----");
+      //  proprietario.remover(novoCarro);
+       
+         
+       
+        // proprietario.remover("AEX-4542");
+         proprietario.listar();
+         proprietario.pesquisar("AEX-4542");
+         proprietario.pesquisar("cacimbinha");
+        /*proprietario.setCarro(carro);
         // proprietario.mostrar();
         System.out.println("-------REMOVENDO CARRO DO PROPRIETARIO---------");
         proprietario.removeCarro(carro);
@@ -13,6 +24,6 @@ public class testeCarroPessoa {
 
         proprietario.setCarro(carro);
         System.out.println("---------- APOS ADICIONAR O NOVO VEICULO---------");
-        proprietario.mostrar();
+        proprietario.mostrar();*/
     }
 }
