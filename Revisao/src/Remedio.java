@@ -38,16 +38,19 @@ public class Remedio {
     }
 
     public void reduzirPreco(double valor) {
-        preco = preco - valor;
+        if (preco - valor >= 0) {
+            this.preco = preco - valor;
 
+        } else {
+            System.out.println("------Preço incorreto!-------");
+        }
     }
 
     public boolean ehValido(int data) {
 
         if (this.validade <= data) {
             return true;
-        } 
-        else {
+        } else {
             return false;
         }
     }

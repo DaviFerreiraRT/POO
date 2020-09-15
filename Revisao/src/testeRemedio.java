@@ -2,10 +2,12 @@ public class testeRemedio {
     public static void main(String[] args) {
 
         Remedio teste1 = new Remedio(1234, "Dipirona");
-        System.out.println("-------PRIMEIRO REMEDIO---------------");
+        Prescicao p1 = new Prescicao();
+        p1.incluir(teste1);
+        /*System.out.println("-------PRIMEIRO REMEDIO---------------");
         teste1.setDataDeFabricacao("14/5/2020");
         teste1.setPreco(55.60);
-        teste1.reduzirPreco(10.60);
+        teste1.reduzirPreco(56.60);
         teste1.setValidade(5);
         teste1.imprimir();
         if (teste1.ehValido(2)) {
@@ -41,7 +43,13 @@ public class testeRemedio {
         else {
             System.out.println("O remedio estaa fora do prazo de validade!");
         }
-        teste3.imprimir();
+        teste3.imprimir();*/
+        teste1.setDataDeFabricacao("14/5/2020");
+        teste1.setPreco(55.60);
+        teste1.reduzirPreco(59.60);
+        teste1.setValidade(5);
+        teste1.imprimir();
+        p1.excluir(teste1);
 
     }
 
