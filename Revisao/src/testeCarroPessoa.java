@@ -8,7 +8,7 @@ public class testeCarroPessoa {
         proprietario.adicionar(new Carro("Fusca","OIP-4545",1985,10.00));
         // proprietario.mostrar();
         // System.out.println("---- APOS REMOVIDO O VEICULO DO PROPRIETARIO ----");
-        // proprietario.remover(novoCarro);
+        proprietario.remover(novoCarro);
 
         // proprietario.remover("AEX-4542");
         // proprietario.mostrar();

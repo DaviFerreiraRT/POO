@@ -70,6 +70,9 @@ public class Pessoa {
             totalCarros--;
             System.out.println("Carro do proprietário " + getNome() + " removido!");
         }
+        else{
+            System.out.println("Remedio não existe!");
+        }
     }
 
     public void remover(String pla) {
