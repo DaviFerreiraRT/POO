@@ -4,8 +4,7 @@ public class Pessoa {
     private String telephone;
     private int idade;
     private int totalCarros;
-
-    Carro carros[] = new Carro[5];
+    private Carro carros[] = new Carro[5];
 
     public Pessoa() {
 
@@ -44,9 +43,10 @@ public class Pessoa {
         if (carros != null) {
             for (int i = 0; i < carros.length; i++) {
                 if (carros[i] != null) {
+                    System.out.println("Dados do "+ (i+1)+"o carro");
                     carros[i].visualizar();
                 }
-            }
+            }  
         } else {
             System.out.println("Nenhum veiculo informado!");
         }
@@ -70,14 +70,11 @@ public class Pessoa {
             totalCarros--;
             System.out.println("Carro do proprietário " + getNome() + " removido!");
         }
-        else{
-            System.out.println("Remedio não existe!");
-        }
     }
 
     public void remover(String pla) {
         for (int i = 0; i < carros.length; i++) {
-            if (carros[i] != null && carros[i].getPlaca() == pla) {
+            if (carros[i] != null && carros[i].getPlaca().equals(pla)) {
                 carros[i].setPlaca(null);
                 System.out.println("-------Placa removida!--------");
                 break;
@@ -93,7 +90,8 @@ public class Pessoa {
 
     public Carro pesquisar(String pla){
         for(int i = 0; i< carros.length;i++){
-            if(carros[i]!=null && carros[i].getPlaca()==pla){
+            if(carros[i]!=null && carros[i].getPlaca().equals(pla)) // equals compara string
+            {
                 System.out.println("Numero da placa encontrada!\nPlaca requistada: "+ pla);
                 return carros[i];
             }
@@ -148,7 +146,6 @@ public class Pessoa {
     public Carro[] getCarro() {
         return carros;
     }
-
     /*
      * public void removeCarro(Carro carro) { this.carros = null; }
      */

@@ -11,7 +11,7 @@ public class testeTurma {
         estudante = new Estudante("Davi", 'M');
         estudante.setMatricula(2);
         poo.matricular(estudante);
-        poo.exibir();  
+       
 
         /*
          * Estudante segundoEstudante = new Estudante("Davi",'M');
