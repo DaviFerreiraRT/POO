@@ -173,11 +173,11 @@ public class Veiculo {
 	public Peca pesquisarPeca(Peca pe) {
 		for (int i = 0; i < pecas.length; i++) {
 			if (pecas[i] != null && pecas[i].getDescricao().equals(pe)) {
-				System.out.println("Peca encontrada! \n Descricão dada: " + pe);
+				System.out.println("Peca encontrada! \n Descricï¿½o dada: " + pe);
 				return pecas[i];
 			}
 		}
-		System.out.println("Peca não encontrada! ");
+		System.out.println("Peca nï¿½o encontrada! ");
 		return null;
 	}
 }
