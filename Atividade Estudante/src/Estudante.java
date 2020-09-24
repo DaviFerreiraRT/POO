@@ -32,7 +32,7 @@ public class Estudante {
             System.out.println("Todas as notas do aluno(a)=" + teste);
         }
         double media = soma / notas.length;
-        System.out.println("A média do aluno(a) é= " + media);
+        System.out.println("A media do aluno(a) é= " + media);
         if (meuCurso != null) {
             meuCurso.exibir();
         }
@@ -98,15 +98,19 @@ public class Estudante {
     public void setMeuCurso(Curso curso) {
         meuCurso = curso;
     }
+
     public Disciplina[] getMateria() {
         return materia;
     }
+
     public double[] getNotas() {
         return notas;
     }
+
     public void setMateria(Disciplina[] materia) {
         this.materia = materia;
     }
+
     public void setNotas(double[] notas) {
         this.notas = notas;
     }
