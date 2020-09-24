@@ -32,6 +32,11 @@ public class testeArrayList {
         t1.trancar(159);
         t2.exibir();
         t2.trancar(e3);
+        t1.trancar(e3);
+        t2.pesquisar(156);
+
+        t1.exibir();
+        t2.exibir();
     }
     
 
