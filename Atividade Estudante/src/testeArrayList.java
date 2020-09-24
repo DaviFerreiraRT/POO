@@ -13,6 +13,10 @@ public class testeArrayList {
         Estudante e5 = new Estudante("Emily", 'F', 158);
         Estudante e6 = new Estudante("Beatriz", 'F', 159);
 
+        e6.setNota(1, 10);
+        e6.setNota(2, 9);
+        e6.setNota(3, 9.5);
+        e6.setNota(4,8.0);
         Turma t2 = new Turma ( "BD2 ");
         
         System.out.println(e1.toString());
