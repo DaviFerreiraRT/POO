@@ -1,20 +1,34 @@
-import java.util.ArrayList;
-
 public class testeTurma {
     public static void main(String[] args) {
-            ArrayList al = new ArrayList();
-            al.add(10);
-            al.add("POO");
-            al.add(20);
-            al.remove(2);
-            al.add(new Estudante ("Maria",'F'));
-            
-            print(al);
-        }
+        Estudante estudante = new Estudante("Maria", 'F');
+        Turma poo = new Turma("Programação Orientada a Objetos");
+        estudante.setMatricula(1);
+        estudante.setNota(1, 5);
+        estudante.setNota(2, 7.5);
+        estudante.setNota(3, 8.5);
+        estudante.setNota(4, 10);
+        poo.matricular(estudante);
+        estudante = new Estudante("Davi", 'M');
+        estudante.setMatricula(2);
+        poo.matricular(estudante);
+       
 
-        public static void print(ArrayList a) {
-            for (int i = 0; i < a.size(); i++) {
-                System.out.println(a.get(i));
-            }
-        }
+        /*
+         * Estudante segundoEstudante = new Estudante("Davi",'M');
+         * poo.matricular(segundoEstudante);
+         */
+        // poo.exibir();
+
+        /*poo.pesquisar(5);
+        poo.pesquisar(1);
+        // poo.trancar(5);
+        poo.exibir();
+        poo.trancar(1);
+        // poo.exibir();
+
+        poo.trancar(estudante);
+
+        poo.exibir();*/
+
+    }
 }
