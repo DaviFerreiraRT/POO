@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-public class testeMotorVeiculoPeca {
-
-	public static void main(String[] args) {
+public class testeArrayList {
+    public static void main(String[] args) {
         ArrayList al = new ArrayList();
         al.add(10);
         al.add("POO");
         al.add(20);
         al.remove(2);
+        al.add(new Estudante ("Maria",'F'));
         
         print(al);
     }

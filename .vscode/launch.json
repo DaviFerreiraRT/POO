@@ -6,6 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testeArrayList",
+            "request": "launch",
+            "mainClass": "testeArrayList"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testeArrayList",
+            "request": "launch",
+            "mainClass": "testeArrayList",
+            "projectName": "eclipse-workspace_a327ba57"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testeMotorVeiculoPeca",
             "request": "launch",
             "mainClass": "testeMotorVeiculoPeca",

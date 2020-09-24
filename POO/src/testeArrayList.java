@@ -1,20 +1,19 @@
-import java.util.ArrayList;
+import java.util.*;
+public class testeArrayList {
 
-public class testeMotorVeiculoPeca {
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         ArrayList al = new ArrayList();
         al.add(10);
         al.add("POO");
         al.add(20);
-        al.remove(2);
+        al.remove(1);
         
         print(al);
     }
 
     public static void print(ArrayList a) {
         for (int i = 0; i < a.size(); i++) {
-            System.out.println(a.get(i));
+            System.out.print(a.get(i));
         }
     }
 }
