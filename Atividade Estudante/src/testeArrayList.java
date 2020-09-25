@@ -33,10 +33,10 @@ public class testeArrayList {
         t2.matricular(e4);
 
         //t1.exibir();
-        //t1.trancar(159);
+        t1.trancar(155);
        // t2.exibir();
         //t2.trancar(e3);
-       //t1.trancar(e3);
+        t1.trancar(e3);
         t2.pesquisar(156);
 
        // t1.exibir();
