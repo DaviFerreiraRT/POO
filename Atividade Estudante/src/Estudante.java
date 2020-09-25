@@ -10,11 +10,16 @@ public class Estudante {
         this.matricula = matri;
         this.nome = nom;
         this.sexo = sex;
+        setMatricula(matri);
+        setNome(nom);
+        setSexo(sex);
     }
 
     public Estudante(String nome, char sexo) {
         this.nome = nome;
         this.sexo = sexo;
+        setNome(nome);
+        setSexo(sexo);
     }
 
     public Estudante() {

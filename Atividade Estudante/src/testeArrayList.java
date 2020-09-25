@@ -40,7 +40,7 @@ public class testeArrayList {
         t2.pesquisar(156);
 
        // t1.exibir();
-        //t2.exibir();
+        t2.exibir();
     }
     
 
