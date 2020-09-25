@@ -25,20 +25,20 @@ public class Turma {
     }
 
     public void exibir() {
-        for (int i = 0; i < estudantes.size(); i++) {
+        for (Estudante i : estudantes) {
             {
                 System.out.println("-------TURMA DE " + nome + " --------");
-                estudantes.get(i).Exibir();
+                i.Exibir();
 
             }
         }
     }
 
     public Estudante pesquisar(int matricula) {
-        for (int i = 0; i < estudantes.size(); i++) {
-            if (estudantes.get(i).getMatricula() == matricula) {
+        for (Estudante i : estudantes) {
+            if (i.getMatricula()==matricula) {
                 System.out.println("Numero da matricula encontrada!\nNr da matricula requsitada: " + matricula);
-                return estudantes.get(i);
+                return i;
             }
         }
         System.out.println("Matricula não encontrada!");

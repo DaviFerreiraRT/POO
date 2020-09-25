@@ -19,7 +19,7 @@ public class testeArrayList {
         e6.setNota(4,8.0);
         Turma t2 = new Turma ( "BD2 ");
         
-        System.out.println(e1.toString());
+    
 
         t1.matricular(e1);
         t1.matricular(e2);
@@ -32,15 +32,15 @@ public class testeArrayList {
         t2.matricular(e1);
         t2.matricular(e4);
 
-        t1.exibir();
-        t1.trancar(159);
-        t2.exibir();
-        t2.trancar(e3);
-        t1.trancar(e3);
+        //t1.exibir();
+        //t1.trancar(159);
+       // t2.exibir();
+        //t2.trancar(e3);
+       //t1.trancar(e3);
         t2.pesquisar(156);
 
-        t1.exibir();
-        t2.exibir();
+       // t1.exibir();
+        //t2.exibir();
     }
     
 
