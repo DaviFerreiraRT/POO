@@ -7,12 +7,17 @@ public class Estudante {
     Disciplina[] materia = new Disciplina[5];
 
     public Estudante(String nom, char sex, int matri) {
+        this.matricula = matri;
+        this.nome = nom;
+        this.sexo = sex;
         setMatricula(matri);
         setNome(nom);
         setSexo(sex);
     }
 
     public Estudante(String nome, char sexo) {
+        this.nome = nome;
+        this.sexo = sexo;
         setNome(nome);
         setSexo(sexo);
     }
@@ -96,7 +101,7 @@ public class Estudante {
     }
 
     public void setMeuCurso(Curso curso) {
-        setMeuCurso(curso);
+        meuCurso = curso;
     }
 
     public Disciplina[] getMateria() {
@@ -108,7 +113,7 @@ public class Estudante {
     }
 
     public void setMateria(Disciplina[] materia) {
-        setMateria(materia);
+        this.materia = materia;
     }
 
     public void setNotas(double[] notas) {
