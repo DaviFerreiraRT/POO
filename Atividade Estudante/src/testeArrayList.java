@@ -26,9 +26,6 @@ public class testeArrayList {
         Turma t2 = new Turma ( "BD2 ");
 
         
-        
-    
-
         t1.matricular(e1);
         t1.matricular(e2);
         t1.matricular(e3);
