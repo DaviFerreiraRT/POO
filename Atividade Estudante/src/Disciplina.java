@@ -6,18 +6,16 @@ public class Disciplina {
 
 
     public Disciplina(String nome,String codigo,int cargaHoraria){
-        this.nome=nome;
-        this.codigo=codigo;
-        this.cargaHoraria=cargaHoraria;
+        setCargaHoraria(cargaHoraria);
+        setCodigo(codigo);
+        setNome(nome);
     }
 
     public void incluirEstudante(Estudante e){
 
     }
     public void setNome(String nome) {
-
-        this.nome = nome;
-
+        setNome(nome);
     }
 
     public String getNome() {
@@ -25,9 +23,7 @@ public class Disciplina {
     }
 
     public void setCodigo(String codigo) {
-
-        this.codigo = codigo;
-
+        setCodigo(codigo);
     }
 
     public String getCodigo() {
@@ -36,7 +32,7 @@ public class Disciplina {
 
     public void setCargaHoraria(int cargaHoraria) {
 
-        this.cargaHoraria = cargaHoraria;
+        setCargaHoraria(cargaHoraria);
 
     }
 

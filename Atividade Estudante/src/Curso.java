@@ -5,14 +5,13 @@ public class Curso {
     private int cargaHoraria;
 
     public Curso(String nome,String codigo,int cargaHoraria){
-        this.nome=nome;
-        this.codigo=codigo;
-        this.cargaHoraria=cargaHoraria;
+        setCargaHoraria(cargaHoraria);
+        setcodigo(codigo);
+        setNome(nome);
     }
 
     public void setNome(String nome) {
-
-        this.nome = nome;
+        setNome(nome);
 
     }
 
@@ -21,8 +20,7 @@ public class Curso {
     }
 
     public void setcodigo(String codigo) {
-
-        this.codigo = codigo;
+        setcodigo(codigo);
 
     }
 
@@ -31,8 +29,7 @@ public class Curso {
     }
 
     public void setCargaHoraria(int cargaHoraria) {
-
-        this.cargaHoraria = cargaHoraria;
+        setCargaHoraria(cargaHoraria);
 
     }
 

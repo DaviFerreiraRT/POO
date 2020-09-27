@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class testeArrayList {
     public static void main(String[] args) {
-        
+
         Turma t1 = new Turma ("POO");
         ArrayList al = t1.getEstudantes();
         Curso c1= new Curso ("Sistemas de Informação","GSI",3600);
