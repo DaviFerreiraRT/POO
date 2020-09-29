@@ -26,10 +26,8 @@ public class Turma {
 
     public void exibir() {
         for (Estudante i : estudantes) {
-
             System.out.println("-------TURMA DE " + nome + " --------");
             i.Exibir();
-
         }
     }
 
