@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class testeArrayList {
     public static void main(String[] args) {
@@ -45,12 +46,23 @@ public class testeArrayList {
 
         // t1.exibir();
       //  t2.exibir();
-        print(al);
+        printIterator(al);
     }
 
     public static void print(ArrayList<Estudante> a) {
         for (Estudante i : a) {
             i.Exibir("DADOS DOS ALUNOS!");
         }
+    }
+    public static void printIterator(ArrayList<Estudante> a) {
+            ListIterator<Estudante> it =a.listIterator();
+            System.out.println("EXIBINDO PELO ITERATOR");
+            while(it.hasNext()){
+                it.next().Exibir("DADOS DO ALUNO!!!");
+            }
+            while(it.hasPrevious()){
+                it.previous().Exibir("DADOS DO ALUNO DE TRAS PRA FRENTE");
+            }
+        
     }
 }

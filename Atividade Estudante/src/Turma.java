@@ -42,6 +42,16 @@ public class Turma {
         }
         System.out.println("Matricula não encontrada!");
         return null;
+    }  
+    public Estudante pesquisar(String nome){
+        for(Estudante i : estudantes){
+            if(i.getNome().equals(nome)){
+                System.out.println("Nome do aluno pesquisado foi encontrado!\n Nome do aluno: "+i.getNome());
+                return i;
+            }
+        }
+        System.out.println("Estudante não encontrado!");
+        return null;
     }
 
     public void trancar(int matricula) {
@@ -57,8 +67,8 @@ public class Turma {
     }
 
     public void trancar(Estudante e) {
-        for (Estudante i : estudantes) {
-            if (i.equals(e)) {
+        for (Estudante i : estudantes)  {
+            if (i==e) {
                 estudantes.remove(e);
                 System.out.println("Estudante removido com matricula "+i.getMatricula()+" removida!");
                 return;
@@ -66,5 +76,12 @@ public class Turma {
         }
         System.out.println("Estudante não encontrado!");
     }
-
+    public void listar(){
+        ListIterator <Estudante> it = estudantes.listIterator();
+        System.out.println("EXIBINDO USANDO ITERATOR");
+        while(it.hasNext()){
+            System.out.println("------TURMA DE "+nome+"------");
+            it.next().Exibir();
+        }
+    }
 }
