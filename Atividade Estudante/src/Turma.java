@@ -44,7 +44,7 @@ public class Turma {
     public Estudante pesquisar(String nome){
         for(Estudante i : estudantes){
             if(i.getNome().equals(nome)){
-                System.out.println("Nome do aluno pesquisado foi encontrado!\n Nome do aluno: "+i.getNome());
+                System.out.println("Nome do aluno pesquisado foi encontrado!\nNome do aluno: "+i.getNome());
                 return i;
             }
         }

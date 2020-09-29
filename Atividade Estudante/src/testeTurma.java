@@ -40,7 +40,7 @@ public class testeTurma {
 
         //t1.exibir();
         //t2.listar();
-        t2.listar();
-        //t2.pesquisar("JOANA");
+        //t2.listar();
+        t1.pesquisar("Davi");
     }
 }
