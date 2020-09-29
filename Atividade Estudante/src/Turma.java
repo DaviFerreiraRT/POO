@@ -78,10 +78,10 @@ public class Turma {
     }
     public void listar(){
         ListIterator <Estudante> it = estudantes.listIterator();
-        System.out.println("EXIBINDO USANDO ITERATOR");
+        System.out.println("---USANDO ITERATOR---");
         while(it.hasNext()){
             System.out.println("------TURMA DE "+nome+"------");
-            it.next().Exibir();
+            it.next().Exibir();            
         }
     }
 }

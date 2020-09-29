@@ -31,16 +31,16 @@ public class testeTurma {
         t2.matricular(e1);
         t2.matricular(e4);
 
-        // t1.exibir();
-       // t1.trancar(155);
         //t1.exibir();
-         //t2.trancar(e3);
+        //t1.trancar(155);
+        //t1.exibir();
+        //t2.trancar(e3);
         // t1.trancar(e3);
         //t2.pesquisar(153);
 
-       // t1.exibir();
+        //t1.exibir();
         //t2.listar();
-
-        t2.pesquisar("JOANA");
+        t2.listar();
+        //t2.pesquisar("JOANA");
     }
 }
