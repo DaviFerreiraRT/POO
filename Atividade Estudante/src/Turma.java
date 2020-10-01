@@ -7,7 +7,6 @@ public class Turma {
 
     public Turma() {
     }
-
     public Turma(String nome) {
         this.nome = nome;
     }
