@@ -38,7 +38,7 @@ public class PessoaLista {
     public void listar() {
         ListIterator<Carro> cit = carros.listIterator();
         while (cit.hasNext()) {
-            System.out.println("Carro de : " + this.nome + " sendo exibido ");
+            System.out.println("Carro de " + this.nome + " sendo exibido ");
             cit.next().visualizar();
         }
     }
