@@ -10,9 +10,8 @@ public class testePessoaCarroLista {
     p1.adicionar(c3);
     c2.aplicarDesconto(10);
     c3.aplicarDesconto(55);
-    p1.remover(c1);
-    p1.remover("OIM-8643");
-    p1.listar();
+    p1.pesquisar("OIM-8643");
+    //p1.listar();
     
     }
     

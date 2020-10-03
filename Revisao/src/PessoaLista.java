@@ -76,7 +76,7 @@ public class PessoaLista {
     public Carro pesquisar(String pla) {
         for (Carro i : carros) {
             if (i.getPlaca().equals(pla)) {
-                System.out.println("Carro com placa" + i.getPlaca() + " encontrado");
+                System.out.println("Carro com placa " + i.getPlaca() + " encontrado");
                 return i;
             }
         }
