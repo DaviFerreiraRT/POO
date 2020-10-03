@@ -53,6 +53,7 @@ public class PessoaLista {
     }
 
     public boolean remover(Carro carro) {
+        System.out.println("Carro removido");
         return carros.remove(carro);
     }
 
@@ -60,7 +61,7 @@ public class PessoaLista {
         for (Carro i : carros) {
             if (i.getPlaca().equals(pla)) {
                 carros.remove(i);
-                System.out.println("Carro com placa " + i.getPlaca() + "removido!");
+                System.out.println("Carro com placa " + i.getPlaca() + " removido!");
                 return true;
             }
         }

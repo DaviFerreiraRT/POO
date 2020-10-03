@@ -30,7 +30,7 @@ public class Carro {
         System.out.println("Modelo do carro: " + modelo);
         System.out.println("Ano do carro: " + ano);
         System.out.println("Placa do veiculo: " + placa);
-        System.out.println("Valor do veiculo com desconto aplicado: R$" + valor);
+        System.out.println("Valor do veiculo aplicado: R$" + valor);
     }
 
     public int getAno() {
