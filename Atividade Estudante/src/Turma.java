@@ -1,84 +1,101 @@
-import java.util.*;
-
 public class Turma {
-
-    private ArrayList<Estudante> estudantes = new ArrayList<Estudante>();
+    private Estudante estudantes[] = new Estudante[10];
     private String nome;
+    private int numEstudantes = 0;
 
     public Turma() {
     }
+
     public Turma(String nome) {
         this.nome = nome;
     }
 
     public void matricular(Estudante e) {
-        estudantes.add(e);
+        estudantes[numEstudantes] = e;
+        numEstudantes++;
+    }
+
+    public int getNumEstudantes() {
+        return numEstudantes;
+    }
+
+    public void setEstudantes(Estudante[] estudantes) {
+        this.estudantes = estudantes;
+    }
+
+    public void setNumEstudantes(int numEstudantes) {
+        this.numEstudantes = numEstudantes;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public ArrayList<Estudante> getEstudantes() {
+    public Estudante[] getEstudantes() {
         return estudantes;
     }
 
     public void exibir() {
-        for (Estudante i : estudantes) {
-            System.out.println("-------TURMA DE " + nome + " --------");
-            i.Exibir();
+        for (int i = 0; i < estudantes.length; i++) {
+            if (estudantes[i] != null) {
+                System.out.println("-----------" + nome + "-----------");
+                estudantes[i].Exibir();
+            }
         }
     }
 
     public Estudante pesquisar(int matricula) {
-        for (Estudante i : estudantes) {
-            if (i.getMatricula() == matricula) {
-                System.out.println("Numero da matricula encontrada!\nNr da matricula requsitada: " + matricula);
-                return i;
+        for (int i = 0; i < numEstudantes; i++) {
+            if (estudantes[i] != null && estudantes[i].getMatricula() == matricula) {
+                System.out.println("Numero da matricula encontrada! \nNr da matricula requsitada: " + matricula);
+                return estudantes[i];
             }
         }
         System.out.println("Matricula não encontrada!");
         return null;
-    }  
-    public Estudante pesquisar(String nome){
-        for(Estudante i : estudantes){
-            if(i.getNome().equals(nome)){
-                System.out.println("Nome do aluno pesquisado foi encontrado!\nNome do aluno: "+i.getNome());
-                return i;
-            }
-        }
-        System.out.println("Estudante não encontrado!");
-        return null;
     }
 
     public void trancar(int matricula) {
-        for (Estudante i : estudantes) {
-            if (i.getMatricula() == matricula) {
-                estudantes.remove(i);
-                System.out.println("Estudante com matricula " + matricula + " removida!");
-                return;
+            boolean matriculaExiste = false;
+            int index = 0;
+        
+            for (int i = 0; i < numEstudantes; i++) {
+                if (estudantes[i] != null && estudantes[i].getMatricula() == matricula) {
+                    matriculaExiste = true;
+                    index = i;
+                    break;
+                }
             }
-
+            if (matriculaExiste) {
+                for (int i = index; i < estudantes.length - 1; i++) {
+                    estudantes[i] = estudantes[i + 1];
+                }
+                estudantes[estudantes.length - 1] = null;
+                numEstudantes--;
+            } else {
+                System.out.println("Matricula não existe! ");
+            }
         }
-        System.out.println("Estudante não foi encontrado!");
-    }
 
     public void trancar(Estudante e) {
-        for (Estudante i : estudantes)  {
-            if (i==e) {
-                estudantes.remove(e);
-                System.out.println("Estudante removido com matricula "+i.getMatricula()+" removida!");
-                return;
+        boolean estudanteExiste = false;
+        int index = 0;
+        for (int i = 0; i < estudantes.length; i++) {
+            if (estudantes[i] == e) {
+                estudanteExiste = true;
+                index = i;
+                break;
             }
         }
-        System.out.println("Estudante não encontrado!");
-    }
-    public void listar(){
-        ListIterator <Estudante> it = estudantes.listIterator();
-        System.out.println("---USANDO ITERATOR---");
-        while(it.hasNext()){
-            System.out.println("------TURMA DE "+nome+"------");
-            it.next().Exibir();            
+        if (estudanteExiste) {
+            for (int i = index; i < estudantes.length - 1; i++) {
+                estudantes[i] = estudantes[i + 1];
+            }
+            estudantes[estudantes.length - 1] = null;
+            numEstudantes--;
+            System.out.println("Estudante com matricula " + e.getMatricula() + " apagada êxito!");
+        } else {
+            System.out.println("Estudante não encontrado! ");
         }
     }
 }

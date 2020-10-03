@@ -4,7 +4,7 @@ import java.util.ListIterator;
 public class testeArrayList {
     public static void main(String[] args) {
 
-        Turma t1 = new Turma("POO");
+        TurmaLista t1 = new TurmaLista("POO");
         ArrayList al = t1.getEstudantes();
         Curso c1 = new Curso("Sistemas de Informação", "GSI", 3600);
         Estudante e1 = new Estudante("Jonas", 'M', 154);
@@ -24,7 +24,7 @@ public class testeArrayList {
         e6.setNota(2, 9);
         e6.setNota(3, 9.5);
         e6.setNota(4, 8.0);
-        Turma t2 = new Turma("BD2 ");
+        TurmaLista t2 = new TurmaLista("BD2 ");
 
         t1.matricular(e1);
         t1.matricular(e2);
