@@ -18,12 +18,12 @@ public class EstudanteMonitor extends Estudante {
         return disciplina;
     }
 
-    public EstudanteMonitor(int matricula, String nome, char sexo, double bols, String disc) {
+    public EstudanteMonitor(int matricula, String nome, char sexo, double bolsa, String disciplina) {
         setMatricula(matricula);
         setNome(nome);
         setSexo(sexo);
-        bolsa = bols;
-        disciplina = disc;
+        this.bolsa = bolsa;
+        this.disciplina = disciplina;
     };
 
     public void tirarDuvidas(){

@@ -29,7 +29,7 @@ public class EstudanteEstagiario extends Estudante {
     @Override
     public void Exibir() {
         super.Exibir();
-        System.out.println("Salario: " + salario);
+        System.out.println("Salario do aluno na empresa: " + salario);
         System.out.println("Empresa: " + empresa);
     }
 
