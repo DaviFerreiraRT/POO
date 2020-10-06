@@ -10,16 +10,11 @@ public class Estudante {
         this.matricula = matri;
         this.nome = nom;
         this.sexo = sex;
-        setMatricula(matri);
-        setNome(nom);
-        setSexo(sex);
     }
 
     public Estudante(String nome, char sexo) {
         this.nome = nome;
         this.sexo = sexo;
-        setNome(nome);
-        setSexo(sexo);
     }
 
     public Estudante() {
@@ -31,7 +26,7 @@ public class Estudante {
         System.out.println("Nome do aluno(a)= " + this.nome);
         System.out.println("Sexo do aluno(a)= " + this.sexo);
         double soma = 0;
-        // NOVO FORMATO DE FAZER FOR
+    
         for (double teste : notas) {
             soma += teste;
             System.out.println("Todas as notas do aluno(a)=" + teste);
