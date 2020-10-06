@@ -6,7 +6,7 @@ public class testeTurmaLista {
 
         TurmaLista t1 = new TurmaLista("POO");
         ArrayList al = t1.getEstudantes();
-
+        
         Estudante e1 = new Estudante("Jonas", 'M', 154);
         Estudante e2 = new Estudante("Rodrigo", 'M', 155);
         Estudante e3 = new Estudante("Davi", 'M', 156);
