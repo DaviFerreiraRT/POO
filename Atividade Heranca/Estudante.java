@@ -2,7 +2,7 @@ public class Estudante {
     private int matricula;
     private String nome;
     private char sexo;
-    private double[] notas = new double[4];
+    double[] notas = new double[4];
     Curso meuCurso;
     Disciplina[] materia = new Disciplina[5];
 

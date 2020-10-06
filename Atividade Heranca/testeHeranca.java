@@ -1,10 +1,10 @@
 public class testeHeranca {
     public static void main(String[] args) {
         EstudanteMonitor em = new EstudanteMonitor(111, "Davi", 'M', 500.00, "POO");
-        em.setNota(1,10);
-        em.setNota(2,8);
-        em.setNota(3,9);
-        em.setNota(4,7);  
+        em.atribuirNota(1,10);
+        em.atribuirNota(2,8);
+        em.atribuirNota(3,9);
+        em.atribuirNota(4,7);  
         
         em.Exibir();
         em.tirarDuvidas();
@@ -12,10 +12,10 @@ public class testeHeranca {
 
 
         EstudanteEstagiario ee= new EstudanteEstagiario(112, "Davi", 'M', 500, "AMAZON");
-        ee.setNota(1,8);
-        ee.setNota(2,8);
-        ee.setNota(3,9);
-        ee.setNota(4,7);
+        ee.atribuirNota(1,8);
+        ee.atribuirNota(2,8);
+        ee.atribuirNota(3,9);
+        ee.atribuirNota(4,7);
         ee.Exibir("Dados do esutudante");
         ee.trabalhar();
     }
