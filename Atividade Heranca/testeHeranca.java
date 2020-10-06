@@ -4,7 +4,7 @@ public class testeHeranca {
         em.atribuirNota(1,10);
         em.atribuirNota(2,8);
         em.atribuirNota(3,9);
-        em.atribuirNota(4,7);  
+        em.atribuirNota(4,7.5);  
         
         em.Exibir();
         em.tirarDuvidas();
@@ -15,7 +15,7 @@ public class testeHeranca {
         ee.atribuirNota(1,8);
         ee.atribuirNota(2,8);
         ee.atribuirNota(3,9);
-        ee.atribuirNota(4,7);
+        ee.atribuirNota(4,7.5);
         ee.Exibir("Dados do esutudante");
         ee.trabalhar();
     }
