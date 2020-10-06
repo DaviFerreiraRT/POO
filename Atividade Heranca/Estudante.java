@@ -43,7 +43,7 @@ public class Estudante {
         this.Exibir();
     }
 
-    public void setNota(int numProva, double nota) {
+    public void atribuirNota(int numProva, double nota) {
         if (nota >= 1 && nota <= 10) {
             this.notas[numProva - 1] = nota;
         } else {

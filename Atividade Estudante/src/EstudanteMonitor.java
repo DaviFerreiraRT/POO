@@ -34,9 +34,15 @@ public class EstudanteMonitor extends Estudante {
     }
     @Override
     public void Exibir() {
-        // TODO Auto-generated method stub
         super.Exibir();
         System.out.println("Bolsa: "+bolsa);
         System.out.println("Disciplina: "+disciplina);
+    }
+    @Override
+    public void atribuirNota(int numProva, double nota) {
+        notas[numProva-1]=nota;
+        if(nota<=7.0){
+            System.out.println("Monitor desligado! ");
+        }
     }
 }
