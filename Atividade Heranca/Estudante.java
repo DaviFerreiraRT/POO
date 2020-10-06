@@ -1,3 +1,5 @@
+import java.util.Set;
+
 public class Estudante {
     private int matricula;
     private String nome;
@@ -20,6 +22,7 @@ public class Estudante {
     public Estudante() {
 
     }
+    
 
     public void Exibir() {
         System.out.println("Matricula do aluno(a)= " + this.matricula);
@@ -49,10 +52,6 @@ public class Estudante {
         } else {
             System.out.println("Nota inválida");
         }
-    }
-
-    public double setNota(int indice) {
-        return this.notas[indice - 1] = 0.0;
     }
 
     public void setMatricula(int matricula) {
@@ -87,9 +86,6 @@ public class Estudante {
         return sexo;
     }
 
-    public double getNota(int numProva) {
-        return this.notas[numProva - 1];
-    }
 
     public Curso getMeuCurso() {
         return meuCurso;
@@ -103,15 +99,9 @@ public class Estudante {
         return materia;
     }
 
-    public double[] getNotas() {
-        return notas;
-    }
 
     public void setMateria(Disciplina[] materia) {
         this.materia = materia;
     }
 
-    public void setNotas(double[] notas) {
-        this.notas = notas;
-    }
 }
