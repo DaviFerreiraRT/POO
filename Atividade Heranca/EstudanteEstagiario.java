@@ -26,7 +26,7 @@ public class EstudanteEstagiario extends Estudante {
         this.empresa = empresa;
     }
 
-    @Override
+
     public void Exibir() {
         super.Exibir();
         System.out.println("Salario do aluno na empresa: " + salario);

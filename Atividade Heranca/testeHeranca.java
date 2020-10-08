@@ -1,6 +1,9 @@
 public class testeHeranca {
     public static void main(String[] args) {
-        EstudanteMonitor em = new EstudanteMonitor(111, "Davi", 'M', 500.00, "POO");
+        Estudante e = new Estudante("Davi",'M',101);
+        e.Exibir("----DADOS DO ALUNO ----");
+
+        EstudanteMonitor em = new EstudanteMonitor(111, "Davi", 'm', 500.00, "POO");
 
         em.atribuirNota(1,10);
         em.atribuirNota(2,8);
