@@ -18,6 +18,7 @@ public class testeHeranca {
 
         em.tirarDuvidas();
         em.auxiliaProfessor();
+        
 
 
         EstudanteEstagiario ee= new EstudanteEstagiario(112, "Jonas", 'M', 500, "AMAZON");
@@ -27,14 +28,12 @@ public class testeHeranca {
         ee.atribuirNota(4,7.5);
 
         //System.out.println("---------------------------------------");
-        //ee.Exibir("Dados do esutudante");
+        ee.Exibir("Dados do esutudante");
         //ee.trabalhar();
         Turma t1 = new Turma ("POO");
         t1.matricular(ee);
         t1.matricular(em);
         t1.matricular(e);
-        t1.exibir();
-    
     
 
         

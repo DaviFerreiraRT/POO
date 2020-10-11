@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testeHeranca",
+            "request": "launch",
+            "mainClass": "testeHeranca",
+            "projectName": "Programacao-Orientada-a-Objetos_963693bc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testeArrayList",
             "request": "launch",
             "mainClass": "testeArrayList"
