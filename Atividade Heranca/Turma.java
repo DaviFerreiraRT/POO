@@ -81,4 +81,9 @@ public class Turma {
             it.next().Exibir();            
         }
     }
+    public void imprimirClasse(){
+        for(int i = 0; i<estudantes.size();i++){
+            System.out.println(estudantes.get(i).getClass());
+        }
+    }
 }
