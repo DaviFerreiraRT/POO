@@ -8,6 +8,18 @@
             "type": "java",
             "name": "CodeLens (Launch) - TesteFuncionario",
             "request": "launch",
+            "mainClass": "TesteFuncionario"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testeHeranca",
+            "request": "launch",
+            "mainClass": "testeHeranca"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TesteFuncionario",
+            "request": "launch",
             "mainClass": "TesteFuncionario",
             "projectName": "Programacao-Orientada-a-Objetos_7b7b1539"
         },
