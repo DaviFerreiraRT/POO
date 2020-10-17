@@ -1,7 +1,9 @@
-public class PecaNovo {
+public class PecaNovo implements Exibivel {
 	private int codigo;
 	private String descricao;
 	private String marca;
+
+	static int numPecas = 0;
 
 	public PecaNovo() {
 
@@ -11,10 +13,6 @@ public class PecaNovo {
 		this.codigo = codigo;
 		this.descricao = descricao;
 		this.marca = marca;
-
-		setCodigo(codigo);
-		setMarca(marca);
-		setDescricao(descricao);
 	}
 
 	public int getCodigo() {
@@ -40,10 +38,11 @@ public class PecaNovo {
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	
+
 	public void exibir() {
-		System.out.println("Codigo da peca: "+codigo);
-		System.out.println("Descricao da peca: "+descricao);
-		System.out.println("Marca da peca:" +marca);
+		System.out.println("Codigo da peca: " + getCodigo());
+		System.out.println("Descricao da peca: " + getDescricao());
+		System.out.println("Marca da peca:" + getMarca());
 	}
+	
 }

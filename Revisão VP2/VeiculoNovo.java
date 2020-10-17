@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class VeiculoNovo {
     private String placa;
@@ -7,6 +8,8 @@ public class VeiculoNovo {
     private float velocMax;
     private float preco;
     private int capacidade;
+    private MotorNovo motor;
+    private ArrayList<PecaNovo> pecas = new ArrayList<PecaNovo>();
 
     public VeiculoNovo() {
     }
@@ -76,14 +79,39 @@ public class VeiculoNovo {
     public void setVelocMax(float velocMax) {
         this.velocMax = velocMax;
     }
+    public void setPecas(ArrayList<PecaNovo> pecas) {
+        this.pecas = pecas;
+    }
+    public void setMotor(MotorNovo motor) {
+        this.motor = motor;
+    }
+    public MotorNovo getMotor() {
+        return motor;
+    }
+    public ArrayList<PecaNovo> getPecas() {
+        return pecas;
+    }
 
     public void exibir() {
-        System.out.println("Placa= " + placa);
-        System.out.println("Chassi= " + chassi);
-        System.out.println("Ano= " + ano);
-        System.out.println("Peso= " + peso + "kg");
-        System.out.println("Velocidade Maxima=" + velocMax + "Km/h");
-        System.out.println("Preco:R$" + preco);
+        System.out.println("Placa= " + getPlaca());
+        System.out.println("Chassi= " + getChassi());
+        System.out.println("Ano= " + getAno());
+        System.out.println("Peso= " + getPeso() + "kg");
+        System.out.println("Velocidade Maxima=" + getVelocMax() + "Km/h");
+        System.out.println("Preco:R$" + getPreco());
+    }
+
+    public void adicionar(PecaNovo e) {
+        pecas.add(e);
+    }
+
+    public void consultar(int codigo) {
+        for (PecaNovo i : pecas) {
+            if (i.getCodigo() == codigo) {
+                System.out.println("Peca com codigo " + codigo + " removida!");
+            }
+        }
+        System.out.println("Peca com codigo nao encontrado!");
     }
 
     public void aumentarPreco(double aumento) {

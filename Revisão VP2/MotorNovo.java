@@ -1,4 +1,4 @@
-public class MotorNovo {
+public class MotorNovo implements Exibivel{
     private int potencia;
     private int cilindrada;
 
@@ -15,7 +15,7 @@ public class MotorNovo {
         return potencia;
     }
     public void exibir(){
-        System.out.println("Cilindradas: "+ this.cilindrada);
-        System.out.println("Pontencia: "+this.potencia);
+        System.out.println("Cilindradas: "+ getCilindrada());
+        System.out.println("Pontencia: "+getPotencia());
     }
 }
