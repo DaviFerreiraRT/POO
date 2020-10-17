@@ -1,7 +1,6 @@
 public class Automovel extends Transporte {
     private String placa;
 
-
     public Automovel() {
     }
 
@@ -10,15 +9,20 @@ public class Automovel extends Transporte {
         this.placa = placa;
     }
 
-    
     public void moverSe(double quilometros) {
         double auxQuilo = getQuilometragem();
-        int auxLitro=getCapacidadeTanque();
-        quilometros+=auxQuilo;
-        if(auxQuilo==8){
-            auxLitro=auxLitro-1;
-            System.out.println("Total de litros apos 8 km pecorrido: "+auxLitro);
+        int auxLitro = getCapacidadeTanque();
+        quilometros += auxQuilo;
+        if (auxQuilo == 8) {
+            auxLitro = auxLitro - 1;
+            System.out.println("Total de litros apos 8 km pecorrido: " + auxLitro);
         }
+    }
+
+    public void exibir() {
+
+        super.exibir();
+        System.out.println("Placa do veiculo: " + placa);
     }
 
 }
