@@ -10,13 +10,14 @@ public class Automovel extends Transporte {
     }
 
     public void moverSe(double quilometros) {
-        double auxQuilo = getQuilometragem();
-        int auxLitro = getCapacidadeTanque();
-        quilometros += auxQuilo;
-        if (auxQuilo == 8) {
-            auxLitro = auxLitro - 1;
-            System.out.println("Total de litros apos 8 km pecorrido: " + auxLitro);
-        }
+       if(this.capacidadeTanque>=quilometros/8){
+           this.quilometragem+=quilometros;
+           this.capacidadeTanque-=quilometros/8;
+           System.out.println("O carro andou: "+ quilometragem+" e ficou com total de litros: "+capacidadeTanque);
+       }
+       else{
+        System.out.println("O carro não se possui combustivel suficiente!");
+       }
     }
 
     public void exibir() {

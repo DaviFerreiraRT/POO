@@ -94,12 +94,12 @@ public class VeiculoNovo implements Exibivel{
 
     @Override
     public void exibir() {
-            System.out.println("Placa= " + getPlaca());
-            System.out.println("Chassi= " + getChassi());
-            System.out.println("Ano= " + getAno());
-            System.out.println("Peso= " + getPeso() + "kg");
-            System.out.println("Velocidade Maxima=" + getVelocMax() + "Km/h");
-            System.out.println("Preco:R$" + getPreco());
+            System.out.println("Placa= " + this.placa);
+            System.out.println("Chassi= " + this.chassi);
+            System.out.println("Ano= " + this.ano);
+            System.out.println("Peso= " + this.peso + "kg");
+            System.out.println("Velocidade Maxima=" + this.velocMax + "Km/h");
+            System.out.println("Preco:R$" + this.preco);
         
     }
 

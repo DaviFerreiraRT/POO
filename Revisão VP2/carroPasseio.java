@@ -24,11 +24,11 @@ public class carroPasseio extends VeiculoNovo {
     public String getModelo() {
         return modelo;
     }
-    @Override
-    public void exibir() {
-        System.out.println("Modelo do veiculo: "+getModelo());
-        System.out.println("Cor do veiculo: "+getCor());
-    }
     
+    public void exibir() {
+        super.exibir();
+        System.out.println("Modelo do veiculo: "+this.modelo);
+        System.out.println("Cor do veiculo: "+this.cor);
+    }
 
 }
