@@ -6,6 +6,7 @@ public class testeTransporte {
         t.abastecer(10);*/
         Automovel a = new Automovel ( "A", "CARRO", 560, 420, "AEX-4542");
         a.exibir();
-        a.moverSe(8);
+        a.moverSe(9);
+        a.abastecer(5);
     }
 }
