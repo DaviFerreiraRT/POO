@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class VeiculoNovo {
+public class VeiculoNovo implements Exibivel{
     private String placa;
     private long chassi;
     private int ano;
@@ -92,13 +92,15 @@ public class VeiculoNovo {
         return pecas;
     }
 
+    @Override
     public void exibir() {
-        System.out.println("Placa= " + getPlaca());
-        System.out.println("Chassi= " + getChassi());
-        System.out.println("Ano= " + getAno());
-        System.out.println("Peso= " + getPeso() + "kg");
-        System.out.println("Velocidade Maxima=" + getVelocMax() + "Km/h");
-        System.out.println("Preco:R$" + getPreco());
+            System.out.println("Placa= " + getPlaca());
+            System.out.println("Chassi= " + getChassi());
+            System.out.println("Ano= " + getAno());
+            System.out.println("Peso= " + getPeso() + "kg");
+            System.out.println("Velocidade Maxima=" + getVelocMax() + "Km/h");
+            System.out.println("Preco:R$" + getPreco());
+        
     }
 
     public void adicionar(PecaNovo e) {

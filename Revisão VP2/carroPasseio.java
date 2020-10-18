@@ -26,7 +26,6 @@ public class carroPasseio extends VeiculoNovo {
     }
     @Override
     public void exibir() {
-        super.exibir();
         System.out.println("Modelo do veiculo: "+getModelo());
         System.out.println("Cor do veiculo: "+getCor());
     }
