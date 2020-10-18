@@ -34,6 +34,7 @@ public class Frota {
             if (v.getAno() == ano) {
                 veiculos.remove(v);
                 System.out.println("Veiculo removido com exito!");
+                break;
             }
         }
         System.out.println("Veiculo não encontrado");
