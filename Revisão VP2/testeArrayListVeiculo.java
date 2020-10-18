@@ -18,6 +18,5 @@ public class testeArrayListVeiculo  {
             vi.exibir();
         }
         
-    
     }
 }
