@@ -7,23 +7,14 @@ public class Multiplo {
 
         int n = scan.nextInt();
 
-        for(int i = 0 ; i<=n;i++){
-            if(n%3==0){
-                System.out.println("FIZZ");
-                break;
-            }
-            if(n%5==0){
-            System.out.println("BUZZ");
-            break;
-            
-            }
-
-            if(n%3==0 && n%5==0){
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("FIZZBUZZ");
-                break;
-               
+            } else if (i % 3 == 0) {
+                System.out.println("FIZZ");
+            } else if (i % 5 == 0) {
+                System.out.println("BUZZ");
             }
         }
     }
-    
 }
