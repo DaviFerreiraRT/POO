@@ -41,7 +41,8 @@ public class testeArrayListVeiculo {
                 System.out.print("Digite o modelo: ");
                 String modelo = scan.next();
                 
-                carroPasseio carro = new carroPasseio(placa, chassi, ano, peso, velocMax, preco, capacidade, cor, modelo);
+                CarroPasseio carro = new CarroPasseio(placa, chassi, ano, peso, velocMax, preco, capacidade, cor,
+                        modelo);
 
                 veiculos.add(carro);
 
