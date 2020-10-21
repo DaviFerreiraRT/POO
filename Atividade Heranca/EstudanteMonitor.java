@@ -19,9 +19,7 @@ public class EstudanteMonitor extends Estudante {
     }
 
     public EstudanteMonitor(int matricula, String nome, char sexo, double bolsa, String disciplina) {
-        setMatricula(matricula);
-        setNome(nome);
-        setSexo(sexo);
+        super(nome,sexo,matricula);
         this.bolsa = bolsa;
         this.disciplina = disciplina;
     };
@@ -40,7 +38,7 @@ public class EstudanteMonitor extends Estudante {
     }
     @Override
     public void atribuirNota(int numProva, double nota) {
-        notas[numProva-1]=nota;
+        super.atribuirNota(numProva, nota);
         if(nota<=7.0){
             System.out.println("Monitor desligado! ");
         }

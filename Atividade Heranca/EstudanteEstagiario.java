@@ -19,9 +19,7 @@ public class EstudanteEstagiario extends Estudante {
     }
 
     public EstudanteEstagiario(int matricula, String nome, char sexo, double salario, String empresa) {
-        setMatricula(matricula);
-        setNome(nome);
-        setSexo(sexo);
+        super(nome,sexo,matricula);
         this.salario = salario;
         this.empresa = empresa;
     }
@@ -39,7 +37,7 @@ public class EstudanteEstagiario extends Estudante {
 
     @Override
     public void atribuirNota(int numProva, double nota) {
-        notas[numProva - 1] = nota;
+        super.atribuirNota(numProva, nota);
         if (nota <=7.0) {
             System.out.println("Estagiario Desligado!");
         }
