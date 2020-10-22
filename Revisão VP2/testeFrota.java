@@ -14,6 +14,7 @@ public class testeFrota {
     f.incluir(caq);
     //f.listar();
     f.excluirPorAno(1991);     
+
     System.out.println("APOS EXCLUIR");
 
     f.listar();
