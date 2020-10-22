@@ -21,13 +21,7 @@ public class Veiculo {
 		this.velocMax = velocMax;
 		this.preco = preco;
 		this.capacidade = capacidade;
-		setAno(ano);
-		setCapacidade(capacidade);
-		setPlaca(placa);
-		setPeso(peso);
-		setPreco(preco);
-		setVelocMax(velocMax);
-		setChassi(chassi);
+	
 	}	
 
 	public Motor getMotor() {

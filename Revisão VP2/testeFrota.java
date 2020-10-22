@@ -12,7 +12,9 @@ public class testeFrota {
     f.incluir(cp);
     f.incluir(v);
     f.incluir(caq);
-    f.excluirPorAno(1991);
+    //f.listar();
+    f.excluirPorAno(1991);     
+    System.out.println("APOS EXCLUIR");
 
     f.listar();
 

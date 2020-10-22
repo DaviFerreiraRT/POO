@@ -33,11 +33,11 @@ public class Frota {
         for (VeiculoNovo v : veiculos) {
             if (v.getAno() == ano) {
                 veiculos.remove(v);
-                System.out.println("Veiculo removido com exito!");
-                break;
+                System.out.println("Veiculo removido com exito!");  
             }
+            return;
         }
-        System.out.println("Veiculo não encontrado");
+         System.out.println("Veiculo não encontrado");
     }
 
     public void consultaPorPlaca(String placa) {
