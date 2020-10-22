@@ -10,9 +10,9 @@ public class Frota {
 
     public void excluirPorPlaca(String placa) {
         for (VeiculoNovo v : veiculos) {
-            if (v.getPlaca() == placa) {
+            if (v.getPlaca().equals(placa)) {
                 veiculos.remove(v);
-                System.out.println("Veiculo removido com exito!");
+                System.out.println("Veiculo removido com exito!");  
             }
         }
         System.out.println("Veiculo não encontrado!");
@@ -94,6 +94,7 @@ public class Frota {
     public void listar(){
         ListIterator <VeiculoNovo> it = veiculos.listIterator();
         while(it.hasNext()){
+            System.out.println("----NOVO VEICULO----");
             it.next().exibir();
         }
     }
