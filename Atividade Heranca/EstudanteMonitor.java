@@ -38,7 +38,7 @@ public class EstudanteMonitor extends Estudante {
     }
     @Override
     public void atribuirNota(int numProva, double nota) {
-        super.atribuirNota(numProva, nota);
+        super.atribuirNota(numProva, nota); 
         if(nota<=7.0){
             System.out.println("Monitor desligado! ");
         }

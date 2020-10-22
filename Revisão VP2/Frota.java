@@ -12,7 +12,7 @@ public class Frota {
         for (VeiculoNovo v : veiculos) {
             if (v.getPlaca().equals(placa)) {
                 veiculos.remove(v);
-                System.out.println("Veiculo removido com exito!");  
+                System.out.println("Veiculo removido com exito!");
             }
         }
         System.out.println("Veiculo não encontrado!");
@@ -23,21 +23,27 @@ public class Frota {
             if (v.getChassi() == chassi) {
                 veiculos.remove(v);
                 System.out.println("Veiculo removido com exito!");
-                break;
+                return;
             }
         }
         System.out.println("Veiculo não encontrado!");
     }
 
     public void excluirPorAno(int ano) {
-        for (VeiculoNovo v : veiculos) {
-            if (v.getAno() == ano) {
-                veiculos.remove(v);
-                System.out.println("Veiculo removido com exito!");  
+        boolean veiculoEncontrado = true;
+        while (veiculoEncontrado) {
+            for (int i = 0; i < veiculos.size(); i++) {
+                VeiculoNovo v = veiculos.get(i);
+                if (v.getAno() == ano) {
+                    veiculos.remove(v);
+                    System.out.println("Veiculo removido com exito!");
+                    break;
+                } else if (i == veiculos.size() - 1) {
+                    veiculoEncontrado = false;
+                }
+                
             }
-            return;
         }
-         System.out.println("Veiculo não encontrado");
     }
 
     public void consultaPorPlaca(String placa) {
@@ -91,9 +97,10 @@ public class Frota {
             }
         }
     }
-    public void listar(){
-        ListIterator <VeiculoNovo> it = veiculos.listIterator();
-        while(it.hasNext()){
+
+    public void listar() {
+        ListIterator<VeiculoNovo> it = veiculos.listIterator();
+        while (it.hasNext()) {
             System.out.println("----NOVO VEICULO----");
             it.next().exibir();
         }
