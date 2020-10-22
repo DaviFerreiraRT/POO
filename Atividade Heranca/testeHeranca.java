@@ -30,10 +30,10 @@ public class testeHeranca {
         //ee.trabalhar();
         Turma t1 = new Turma ("POO");
         t1.matricular(ee);
-        t1.matricular(e);
+        t1.matricular(em);
         t1.matricular(e);
         t1.exibir();
-        System.out.println("Todas as classes do utilizadas");
+        System.out.println("Todas as classes que foram utilizadas");
         t1.imprimirClasse();
 
         

@@ -33,4 +33,10 @@ public class Professor extends Funcionario {
     public void recebeSalario() {
         System.out.println("Professor recebendo salario");
     }
+    @Override
+    public void imprimir() {
+        // TODO Auto-generated method stub
+        super.imprimir();
+        System.out.println("Numero de horas de aula: "+this.numeroHorasAulas);
+    }
 }

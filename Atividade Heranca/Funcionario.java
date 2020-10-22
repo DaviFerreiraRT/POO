@@ -42,7 +42,7 @@ public class Funcionario {
         System.out.println("Nome do funcionario: "+nome);
         System.out.println("Matricula do funcionario: "+matricula);
         System.out.println("Sexo do funcionario: "+sexo);
-        System.out.println("Data de nascimente do funcionario"+dataNascimento);
+        System.out.println("Data de nascimente do funcionario: "+dataNascimento);
     }
 
     public void recebeSalario(){

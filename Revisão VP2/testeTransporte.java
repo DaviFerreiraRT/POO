@@ -16,11 +16,6 @@ public class testeTransporte {
         av.moverSe(20);
         av.exibir();
         
-        try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        } catch (IOException | InterruptedException e) {
-           
-            e.printStackTrace();
-        }
+        
     }
 }

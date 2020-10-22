@@ -16,5 +16,11 @@ public class Contador extends Funcionario {
     public void recebeSalario() {
         System.out.println("Contador recebendo salario");
     }
+    @Override
+    public void imprimir() {
+        
+        super.imprimir();
+        System.out.println("Numero da inscrição eh: "+numInscricao);
+    }
 
 }
