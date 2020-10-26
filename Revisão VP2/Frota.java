@@ -48,7 +48,7 @@ public class Frota {
     public void consultaPorPlaca(String placa) {
         for (VeiculoNovo v : veiculos) {
             if (v.getPlaca().equals(placa)) {
-                System.out.println("Veiculo com nome " + v.getPlaca() + " encontrado!");
+                System.out.println("Veiculo com nome " + v.getPlaca() + " encontrado!");asadas
             }
         }
         System.out.println("Estudante não encontrado!");
