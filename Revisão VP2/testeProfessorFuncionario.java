@@ -5,11 +5,15 @@ public class testeProfessorFuncionario {
     
     
 
-    f.aumentarSalario(5);
+    /*f.aumentarSalario(5);
     f.exibir();
     
     p.aumentarSalario(10);
-    p.exibir();
-    }
+    p.exibir();*/
 
+    ProfessorH p2 = new ProfessorH ( "Julia", "Professora",2600,"Sistemas Operacionais", "ADS");
+    p2.aumentarSalario(10);
+
+    p2.exibir();
+    }
 }

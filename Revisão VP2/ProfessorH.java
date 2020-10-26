@@ -1,7 +1,6 @@
-import java.util.ArrayList;
 
 public class ProfessorH extends FuncionarioHeranca {
-    private ArrayList<String> disciplina = new ArrayList<String>();
+    private String disciplina[] = new String[2];
 
     public ProfessorH() {
     }
@@ -9,35 +8,29 @@ public class ProfessorH extends FuncionarioHeranca {
     public ProfessorH(String nome, String funcao, double salario, String disciplina1, String disciplina2) {
         super(nome, funcao, salario);
 
-        this.disciplina.add(disciplina1);
-        this.disciplina.add(disciplina2);
+        this.disciplina[0] = disciplina1;
+        this.disciplina[1] = disciplina2;
+        numFuncionario++;
     }
 
-    public void setDisciplina(ArrayList<String> disciplina) {
+    public void setDisciplina(String[] disciplina) {
         this.disciplina = disciplina;
     }
 
-    public ArrayList<String> getDisciplina() {
+    public String[] getDisciplina() {
         return disciplina;
     }
 
     public void aumentarSalario(double porcentagem) {
-        for (int i = 0; i<disciplina.size();i++){
-            if (disciplina.size() > 0) {
-                double novoSalario = getSalario();
-                
-                novoSalario += (novoSalario * porcentagem) / 100;
-                novoSalario += 100;
-
-                System.out.println("Novo salario do professor com aumento: " + novoSalario);
-                break;
-            }
-        }
+        setSalario((getSalario() + (getSalario() * porcentagem) / 100) + 100 * disciplina.length);
     }
 
     public void exibir() {
         super.exibir();
-        System.out.println("Disciplinas do professor: " + getDisciplina());
+        for(int i = 0 ; i<disciplina.length;i++){
+            System.out.println("Disciplinas do professor: "+disciplina[i]);
+        }
+
 
     }
 }

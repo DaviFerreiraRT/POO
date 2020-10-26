@@ -12,6 +12,7 @@ public class FuncionarioHeranca {
         this.nome = nome;
         this.funcao = funcao;
         this.salario = salario;
+        numFuncionario++;
     }
 
     public String getFuncao() {
