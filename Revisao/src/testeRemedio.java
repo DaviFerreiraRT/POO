@@ -2,7 +2,7 @@ public class testeRemedio {
     public static void main(String[] args) {
 
         Remedio teste1 = new Remedio(1234, "Dipirona","14/05/2020",5,14);
-        Prescicao p1 = new Prescicao();
+        Prescicao p1 = new Prescicao("Davi", "05-10-2014", "Juliana");
         /*System.out.println("-------PRIMEIRO REMEDIO---------------");
         teste1.setDataDeFabricacao("14/5/2020");
         teste1.setPreco(55.60);
@@ -44,14 +44,23 @@ public class testeRemedio {
         }
         teste3.imprimir();*/
         p1.incluir(teste1);
-        p1.imprimir();
         teste1.aumentarPreco(5);
-        System.out.println("------ANTES DE EXCLUIR--------");
-        p1.excluir(teste1);
+        Remedio r2 = new Remedio(4557, "NIMESULIDA", "07/05/2020", 120);
+        System.out.println("PRIMEIRO REMEDIO");
+        p1.incluir(r2);
+        System.out.println("ADICIONANDO SEGUNDO REMEDIO");
+        p1.imprimir();
+        p1.excluir(1234);
+
 
        
         System.out.println("----------- APOS EXCLUIR O REMEDIO----------------");
         p1.imprimir();
+
+
+        p1.buscar("NIMESULIDA");
+
+        p1.buscar("DorFlex");
 
     }
 

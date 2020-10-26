@@ -1,9 +1,9 @@
+import java.util.ArrayList;
 public class Prescicao {
     private String paciente;
     private String data;
     private String medico;
-    private Remedio remedio[] = new Remedio[4];
-    int totRemedio = 0;
+    private ArrayList <Remedio> remedio = new ArrayList <Remedio>();
 
     public Prescicao() {
     }
@@ -20,42 +20,35 @@ public class Prescicao {
     }
 
     public void incluir(Remedio remedio) {
-        this.remedio[totRemedio] = remedio;
-        totRemedio++;
+       this.remedio.add(remedio);
     }
 
-    public void excluir(Remedio remed) {
-        boolean existeRemedio = false;
-        int index = 0;
-        for (int i = 0; i < remedio.length; i++) {
-            if (remedio[i] == remed) {
-                existeRemedio = true;
-                index = i;
-                break;
+    public void excluir(int codigo) {
+        for(Remedio r : remedio){
+            if(r.getCodigo()==codigo){
+                remedio.remove(r);
+                return ;
             }
         }
-        if (existeRemedio) {
-            for (int i = index; i < remedio.length - 1; i++) {
-                remedio[i] = remedio[i + 1];
+    }
+
+    public Remedio buscar(String nome){
+        for(Remedio r: remedio){
+            if(r.getNome().equals(nome)){
+                System.out.println("Remedio encontrado!");
+                return r ;
             }
-            remedio[remedio.length - 1] = null;
-            totRemedio--;
-            System.out.println("Remedio removido ");
         }
+        System.out.println("Remedio não encontrado!");
+        return null;
     }
 
     public void imprimir() {
         System.out.println("Nome do paciente:" + this.paciente);
         System.out.println("Data de inclusão:" + this.data);
         System.out.println("Nome do medico:" + this.medico);
-        if (remedio != null) {
-            for (int i = 0; i < remedio.length; i++) {
-                if (remedio[i] != null) {
-                    remedio[i].imprimir();
-                }
-            }
-        } else {
-            System.out.println("Nenhum veiculo informado!");
+        for(Remedio r : remedio){
+            r.imprimir();
         }
     }
 
@@ -83,20 +76,13 @@ public class Prescicao {
         this.paciente = paciente;
     }
 
-    public void setRemedio(Remedio[] remedio) {
+    public void setRemedio(ArrayList<Remedio> remedio) {
         this.remedio = remedio;
     }
-
-    public void setTotRemedio(int totRemedio) {
-        this.totRemedio = totRemedio;
-    }
-
-    public Remedio[] getRemedio() {
+    public ArrayList<Remedio> getRemedio() {
         return remedio;
     }
 
-    public int getTotRemedio() {
-        return totRemedio;
-    }
+   
 
 }
