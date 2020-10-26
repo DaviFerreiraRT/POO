@@ -51,7 +51,7 @@ public class Frota {
                 System.out.println("Veiculo com nome " + v.getPlaca() + " encontrado!");
             }
         }
-        System.out.println("Estudante não encontrado!");
+        System.out.println("Veiculo não encontrado!");
     }
 
     public void consultaPorChassi(long chassi) {
