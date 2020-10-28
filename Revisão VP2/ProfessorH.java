@@ -7,7 +7,6 @@ public class ProfessorH extends FuncionarioHeranca {
 
     public ProfessorH(String nome, String funcao, double salario, String disciplina1, String disciplina2) {
         super(nome, funcao, salario);
-
         this.disciplina[0] = disciplina1;
         this.disciplina[1] = disciplina2;
         numFuncionario++;
