@@ -25,5 +25,10 @@ public class Automovel extends Transporte {
         super.exibir();
         System.out.println("Placa do veiculo: " + placa);
     }
-
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+    public String getPlaca() {
+        return placa;
+    }
 }

@@ -46,9 +46,10 @@ public class Transporte {
         System.out.println("Capacidade do tanque atualmente apos reabastecer: "+capacidadeTanque);
     }
     public void exibir(){
+        System.out.println("DADOS DO TRANSPORTE");
         System.out.println("Marca do transporte: "+this.marca);
         System.out.println("Modelo do transporte: "+this.modelo);
-        System.out.println("Km total do transporte base: "+this.quilometragem);
-        System.out.println("Capacidade do tanque base: "+this.capacidadeTanque);
+        System.out.println("Km total do transporte: "+this.quilometragem);
+        System.out.println("Capacidade do tanque: "+this.capacidadeTanque);
     }
 }
