@@ -24,16 +24,27 @@ public class Correspondencia {
 
         this.dataDoEnvio+=data;
         this.estado="Enviado";
+
+        System.out.println("Estado: " +this.estado);
+        System.out.println("Data de envio: "+this.dataDoEnvio);
     }
 
     public boolean conferirPreco(){
         if((this.peso<=200 && this.preco==1.4)){
+            System.out.println("Peso: "+this.peso +" e preco: "+this.preco);
+            System.out.println("TRUE");
           return true;
         }else if((this.peso<=600 && this.preco==2.8)){
+            System.out.println("Peso: "+this.peso +" e preco: "+this.preco);
+            System.out.println("TRUE");
           return true;
         }else if((this.peso>600 && this.preco==4)){
+            System.out.println("Peso: "+this.peso +" e preco: "+this.preco);
+            System.out.println("TRUE");
           return true;
         }else{
+            System.out.println("Peso: "+this.peso +" e preco: "+this.preco);
+            System.out.println("FALSE");
           return false;
         }
       }
