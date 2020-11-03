@@ -3,22 +3,29 @@ public class Estudante {
     private String nome;
     private char sexo;
     private double[] notas = new double[4];
+    private static int numEstudante=0;
+    public static String descricao ="Essa classe representa os estudantes";
     Curso meuCurso;
     Disciplina[] materia = new Disciplina[5];
 
     public Estudante(String nom, char sex, int matri) {
+        numEstudante++;
         this.matricula = matri;
         this.nome = nom;
         this.sexo = sex;
     }
 
     public Estudante(String nome, char sexo) {
+        numEstudante++;
         this.nome = nome;
         this.sexo = sexo;
     }
 
     public Estudante() {
-
+        numEstudante++;
+    }
+    public static int getNumEstudante(){
+        return numEstudante;
     }
 
     public void Exibir() {

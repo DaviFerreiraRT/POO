@@ -1,7 +1,7 @@
 public class testeEstudante {
 
     public static void main(String[] args) {
-        Estudante e = new Estudante("Maria", 'F', 202020);
+       Estudante e = new Estudante("Maria", 'F', 202020);
         /*
          * e.matricula = 2004001; e.nome = "Maria Silva"; e.sexo = 'F';
          */
@@ -41,5 +41,8 @@ public class testeEstudante {
         Curso curso=new Curso("Sistemas de Informação","GSI",3160);
         curso.exibir();
         e.setMeuCurso(curso);
+        System.out.println(Estudante.descricao);
+        System.out.println(Estudante.getNumEstudante());
+        
     }
 }
