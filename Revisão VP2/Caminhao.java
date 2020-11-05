@@ -48,4 +48,10 @@ public class Caminhao extends VeiculoNovo {
         System.out.println("Altura máxima do caminhão: " + getAlturaMax());
         System.out.println("Comprimento do caminhão: " + getComprimento());
     }
+    
+    public void exibir(String texto) {
+        System.out.println(texto);
+        this.exibir();
+        
+    }
 }

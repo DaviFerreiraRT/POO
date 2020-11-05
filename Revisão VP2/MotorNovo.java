@@ -15,7 +15,11 @@ public class MotorNovo implements Exibivel{
         return potencia;
     }
     public void exibir(){
-        System.out.println("Cilindradas: "+ getCilindrada());
-        System.out.println("Pontencia: "+getPotencia());
+        System.out.println("Cilindradas: "+ this.cilindrada);
+        System.out.println("Pontencia: "+this.potencia);
+    }
+    public void exibir(String texto){
+        System.out.println(texto);
+        this.exibir();
     }
 }

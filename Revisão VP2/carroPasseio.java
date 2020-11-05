@@ -30,5 +30,11 @@ public class CarroPasseio extends VeiculoNovo {
         System.out.println("Modelo do veiculo: "+this.modelo);
         System.out.println("Cor do veiculo: "+this.cor);
     }
+   
+    public void exibir(String texto) {
+        System.out.println(texto);
+        this.exibir();
+        
+    }
 
 }

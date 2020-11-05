@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
-public class VeiculoNovo implements Exibivel{
-    private String placa;
-    private long chassi;
-    private int ano;
-    private int peso;
-    private float velocMax;
-    private float preco;
-    private int capacidade;
-    private MotorNovo motor;
+public abstract class VeiculoNovo implements Exibivel{
+    protected String placa;
+    protected long chassi;
+    protected int ano;
+    protected int peso;
+    protected float velocMax;
+    protected float preco;
+    protected int capacidade;
+    protected MotorNovo motor;
     private ArrayList<PecaNovo> pecas = new ArrayList<PecaNovo>();
 
     public VeiculoNovo() {

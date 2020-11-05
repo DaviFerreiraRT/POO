@@ -1,5 +1,6 @@
 public interface Exibivel {
 
-    public void exibir();
+    void exibir();
+    void exibir(String texto);
 
 } 

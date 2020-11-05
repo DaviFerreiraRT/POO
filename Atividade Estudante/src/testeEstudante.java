@@ -42,7 +42,7 @@ public class testeEstudante {
         curso.exibir();
         e.setMeuCurso(curso);
         System.out.println(Estudante.descricao);
-        System.out.println(Estudante.getNumEstudante());
+        System.out.println("Numero de estudantes registrados: "+Estudante.getNumEstudante());
         
     }
 }
