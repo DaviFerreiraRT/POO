@@ -14,15 +14,27 @@ public class TesteException {
         Estudante est = new Estudante();
         Estudante est2 = new Estudante();
         try {
-            est.atribuirNota(5, 10);
+            est.atribuirNota(3, 10);
             est2.atribuirNota(4, 11);
 
         } catch (ProvaInexistenteException e) {
-            System.out.println("Prova inexistente...");
+            System.out.println(e.getMessage());
+            System.out.println("Numero da prova invalida:" + e.getProvaInvalida());
+            System.out.println("---Pilha de execução do erro:---");
+            e.printStackTrace();
+            
         } catch (NotaInvalidaException e) {
-            System.out.println("Atribuição de nota invalida!");
+            System.out.println("Erro: Tentativa de lançar nota inválida!");
+            System.out.println("Nota invalida: " + e.getNotaInvalida());
+            System.out.println("---Pilha de execução do erro:---");
+            e.printStackTrace();
+
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+
+        } finally {
+            System.out.println("Sempre passa por aqui.");
         }
-        System.out.println("Após o tratamento do erro...");
 
     }
 

@@ -48,10 +48,10 @@ public class Estudante {
 
     public void atribuirNota(int numProva, double nota) throws NotaInvalidaException, ProvaInexistenteException{
         if (nota < 0.0 || nota > 10.0)
-            throw new NotaInvalidaException();
+            throw new NotaInvalidaException(nota);
 
          else if (numProva< 1 || numProva > notas.length)
-            throw new ProvaInexistenteException();
+            throw new ProvaInexistenteException(numProva);
         else 
             this.notas[numProva - 1] = nota;
         
