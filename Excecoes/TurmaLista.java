@@ -70,7 +70,7 @@ public class TurmaLista {
             } ;
 
         }
-        System.out.println("Estudante não foi encontrado!");
+        throw new EstudanteInexistenteException();
     }
 
     public void trancar(Estudante e) throws EstudanteInexistenteException{
@@ -82,8 +82,7 @@ public class TurmaLista {
             }
         
         }
-        throw new EstudanteInexistenteException();
-        
+        throw new EstudanteInexistenteException();    
     }
 
     public void listar() {
