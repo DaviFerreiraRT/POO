@@ -25,5 +25,8 @@ public class TesteEstudanteException {
         } catch (Exception e ){
             System.out.println("Erro desconhecido!");
         }
+        finally{
+            System.out.println("Codigo finalizado!");
+        }
     }
 }

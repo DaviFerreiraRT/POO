@@ -80,8 +80,7 @@ public class TurmaLista {
                 System.out.println("Estudante removido com matricula " + i.getMatricula() + " removida!");
                 return;
             }
-            
-            ;
+        
         }
         throw new EstudanteInexistenteException();
         
