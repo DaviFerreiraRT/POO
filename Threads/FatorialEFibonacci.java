@@ -1,39 +1,78 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
-public class FatorialEFibonacci implements Runnable {
-    static Scanner sc = new Scanner(System.in);
+class Fibonacci extends Thread {
+    private ArrayList<Integer> sequencia = new ArrayList<>();
+    private int numero;
 
-    private static int numero;
-   
+    public ArrayList<Integer> getSequencia() {
+        return sequencia;
+    }
+
+    public Fibonacci(int numero) {
+        this.numero = numero;
+    }
 
     @Override
     public void run() {
-        System.out.println("Resultado da série de fibonacci: " + fibo(numero));
+        if (this.numero == 1) {
+            System.out.println(1);
+        } else {
+            sequencia.add(1);
+            sequencia.add(1);
+            while (numero > sequencia.get(sequencia.size() - 1)) {
+                sequencia.add((sequencia.get(sequencia.size() - 1) + sequencia.get(sequencia.size() - 2)));
+            }
+        }
     }
+}
+
+class Fatorial extends Thread {
+    int numero;
+    int fatorial = 1;
+
+    public Fatorial(int numero) {
+        this.numero = numero;
+    }
+
+    public int getFatorial() {
+        return fatorial;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= this.numero; i++) {
+            fatorial *= i;
+        }
+    }
+}
+
+public class FatorialEFibonacci {
 
     public static void main(String[] args) {
-        System.out.println("Digite um valor para fazer a série de fibonacci e o fatorial: ");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite um valor para fazer a série de fibonacci e o fatorial: ");
+        int numero = 0;
         numero = sc.nextInt();
-        FatorialEFibonacci Fb = new FatorialEFibonacci();
-        Thread t = new Thread(Fb);
-        t.start();
-        System.out.println("O número " + numero + " tem o fatorial igual a: " + fatorial(numero));
-    }
 
-    public static int fatorial(int numero) {
-        int fact = 1;
-        for (int i = 1; i <= numero; i++) {
-            fact *= i;
-        }
-        return fact;
-    }
+        Fibonacci fib = new Fibonacci(numero);
+        fib.start();
 
-    public static long fibo(int n) {
-        if (n < 2) {
-            return n;
-        } else {
-            return fibo(n - 1) + fibo(n - 2);
+        Fatorial fat = new Fatorial(numero);
+        fat.start();
+
+        while (fib.isAlive() || fat.isAlive()) {
         }
+
+        ArrayList fibonacci = fib.getSequencia();
+
+        System.out.print("Série de Fibonacci: ");
+        for (int i = 0; i < fibonacci.size(); i++) {
+            System.out.print(i == 0 ? fibonacci.get(i) : ", " + fibonacci.get(i));
+        }
+
+        System.out.println("\nFatorial: " + fat.getFatorial());
+
     }
 
 }
