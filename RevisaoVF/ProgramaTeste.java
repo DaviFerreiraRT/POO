@@ -8,20 +8,22 @@ public class ProgramaTeste {
         try {
             f.incluir(c);
             f.incluir(cp);
-            f.consultaPorPlaca("HVR-0452");
-            f.excluirPorChassi(548545);
-            f.aumentarPrecoPlaca("HVR-0608", -1);
+            f.incluir(null);
+            f.excluirPorChassi(5451257);
+            f.aumentarPrecoPlaca("HVR-0608", 5);
         } catch (VeiculoNuloException e) {
-           
-        } catch (PlacaNaoLocalizadaException e) {
-           
+           System.out.println("Erro: Veiculo Nulo!");
         } catch (ChassiNaoLocalizadoException e) {
-           
+            System.out.println("Erro: Chassi não encontrado!");
         } catch (AumentoNegativoException e) {
             System.out.println("Erro: Aumento Inválido");
 
         } catch (Exception e) {
             System.out.println("Erro desconhecido!");
+        }
+        finally{
+            f.listar();
+            System.out.println("Programa concluido!");
         }
     }
 
