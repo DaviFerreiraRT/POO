@@ -1,4 +1,4 @@
-public class Caminhao extends VeiculoNovo {
+public class Caminhao extends Veiculo {
     private float toneladas;
     private float alturaMax;
     private float comprimento;

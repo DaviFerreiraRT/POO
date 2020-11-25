@@ -77,7 +77,7 @@ public class testeArrayListVeiculo {
                 System.out.print("Digite o comprimento: ");
                 float comprimento = scan.nextFloat();
                 
-                Caminhao caminhao = new Caminhao( placa, chassi, ano, peso, velocMax,  preco,  capacidade,
+                CaminhaoVP2 caminhao = new CaminhaoVP2( placa, chassi, ano, peso, velocMax,  preco,  capacidade,
                  toneladas,  alturaMax,  comprimento);
 
                 veiculos.add(caminhao);

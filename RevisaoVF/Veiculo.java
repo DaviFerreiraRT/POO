@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public abstract class Veiculo{
+public abstract class Veiculo {
     protected String placa;
     protected long chassi;
     protected int ano;
@@ -77,18 +75,17 @@ public abstract class Veiculo{
     public void setVelocMax(float velocMax) {
         this.velocMax = velocMax;
     }
-    
+
     public void exibir() {
-            System.out.println("Placa= " + this.placa);
-            System.out.println("Chassi= " + this.chassi);
-            System.out.println("Ano= " + this.ano);
-            System.out.println("Peso= " + this.peso + "kg");
-            System.out.println("Velocidade Maxima=" + this.velocMax + "Km/h");
-            System.out.println("Preco:R$" + this.preco);
-        
+        System.out.println("Placa= " + this.placa);
+        System.out.println("Chassi= " + this.chassi);
+        System.out.println("Ano= " + this.ano);
+        System.out.println("Peso= " + this.peso + "kg");
+        System.out.println("Velocidade Maxima=" + this.velocMax + "Km/h");
+        System.out.println("Preco:R$" + this.preco);
+
     }
 
-    
     public void aumentarPreco(double aumento) {
         this.preco = (float) (preco + aumento);
     }

@@ -3,8 +3,8 @@ public class testeFrota {
 
     FrotaAntigo f = new FrotaAntigo();
     CarroPasseio cp = new CarroPasseio("OEX-4545", 7845135, 2012, 7500, 220, 62000, 5, "PRETO", "SUV");
-    Caminhao ca= new Caminhao("AIM-7871", 7854568, 1991, 1470, 160, 200000, 4, 78500, 5, 30);
-    Caminhao caq= new Caminhao("QOP-7515", 7854569, 1991, 1470, 160, 200000, 4, 78500, 4, 25);
+    CaminhaoVP2 ca= new CaminhaoVP2("AIM-7871", 7854568, 1991, 1470, 160, 200000, 4, 78500, 5, 30);
+    CaminhaoVP2 caq= new CaminhaoVP2("QOP-7515", 7854569, 1991, 1470, 160, 200000, 4, 78500, 4, 25);
 
     
 

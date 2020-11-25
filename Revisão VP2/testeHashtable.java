@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class testeHashtable {
     public static void main(String[] args) {
         Hashtable <String,CarroPasseio>carroHash = new Hashtable <> ();
-        Hashtable <String,Caminhao>CaminhaoHash = new Hashtable <> ();
+        Hashtable <String,CaminhaoVP2>CaminhaoHash = new Hashtable <> ();
 
         Scanner scan = new Scanner(System.in);
         String escolha="";
@@ -92,7 +92,7 @@ public class testeHashtable {
                 System.out.print("Digite o comprimento: ");
                 float comprimento = scan.nextFloat();
                 
-                Caminhao caminhao = new Caminhao( placa, chassi, ano, peso, velocMax,  preco,  capacidade,
+                CaminhaoVP2 caminhao = new CaminhaoVP2( placa, chassi, ano, peso, velocMax,  preco,  capacidade,
                  toneladas,  alturaMax,  comprimento);
 
 

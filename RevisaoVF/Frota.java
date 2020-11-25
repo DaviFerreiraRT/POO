@@ -74,9 +74,9 @@ public class Frota {
                 if (v.getPlaca().equals(placa)) {
                     v.aumentarPreco(aumento);
                     System.out.println("Novo preço com aumento: " + aumento);
-                } else {
-                    throw new AumentoNegativoException();
                 }
+            } else {
+                throw new AumentoNegativoException();
             }
         }
     }

@@ -1,11 +1,11 @@
-public class CarroPasseio extends VeiculoNovo {
+public class CarroPasseioVP2 extends VeiculoNovo {
     private String cor;
     private String modelo;
 
-    public CarroPasseio() {
+    public CarroPasseioVP2() {
     }
 
-    public CarroPasseio(String placa, long chassi, int ano, int peso, float velocMax, float preco, int capacidade,
+    public CarroPasseioVP2(String placa, long chassi, int ano, int peso, float velocMax, float preco, int capacidade,
             String cor, String modelo) {
         super(placa, chassi, ano, peso, velocMax, preco, capacidade);
         this.cor = cor;
