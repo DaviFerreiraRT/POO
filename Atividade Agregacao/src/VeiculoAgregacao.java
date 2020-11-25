@@ -1,4 +1,4 @@
-public class Veiculo {
+public class VeiculoAgregacao {
 	private String placa;
 	private long chassi;
 	private int ano;
@@ -9,11 +9,11 @@ public class Veiculo {
 	private Motor motor;
 	private Peca pecas[] = new Peca[5];
 
-	public Veiculo() {
+	public VeiculoAgregacao() {
 
 	}
 
-	public Veiculo(String placa, long chassi, int ano, int peso, float velocMax, float preco, int capacidade) {
+	public VeiculoAgregacao(String placa, long chassi, int ano, int peso, float velocMax, float preco, int capacidade) {
 		this.placa = placa;
 		this.chassi = chassi;
 		this.ano = ano;

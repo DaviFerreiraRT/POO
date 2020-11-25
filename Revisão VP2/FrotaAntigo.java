@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-public class Frota {
+public class FrotaAntigo {
     private ArrayList<VeiculoNovo> veiculos = new ArrayList<VeiculoNovo>();
 
     public void incluir(VeiculoNovo novoVeiculo) {

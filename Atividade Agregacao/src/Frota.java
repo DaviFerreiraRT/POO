@@ -1,11 +1,11 @@
 
 public class Frota {
 
-	private Veiculo veic[] = new Veiculo[5];
+	private VeiculoAgregacao veic[] = new VeiculoAgregacao[5];
 
 	int totalFrota = 0;
 
-	public void adicionar(Veiculo ve) {
+	public void adicionar(VeiculoAgregacao ve) {
 		this.veic[totalFrota] = ve;
 		totalFrota++;
 	}
@@ -91,11 +91,11 @@ public class Frota {
 		}
 	}
 	}
-	public Veiculo[] getVeic() {
+	public VeiculoAgregacao[] getVeic() {
 		return veic;
 	}
 
-	public void setVeic(Veiculo[] veic) {
+	public void setVeic(VeiculoAgregacao[] veic) {
 		this.veic = veic;
 	}
 
