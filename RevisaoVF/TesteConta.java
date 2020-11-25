@@ -2,8 +2,9 @@ public class TesteConta {
     public static void main(String[] args) {
         ContaBancaria cb = new ContaBancaria(200);
         try {
-            cb.depositar(50);
-            cb.sacar(300);
+            cb.depositar(20);
+            cb.sacar(210);
+            cb.depositar(-10);
             
             
         } catch (SaqueInvalidoException e) {
@@ -12,6 +13,7 @@ public class TesteConta {
         } catch(DepositoInvalidoException e){
             System.out.println(e.getMessage());
             System.out.println("Valor inválido: "+e.getDepositoInvalido());
+            e.printStackTrace();
         } catch (Exception e){
             System.out.println("Erro Desconhecido!");
 

@@ -12,7 +12,7 @@ public class MultiploThread extends Thread {
             Thread.sleep(1000);
             for (int i = numero; i > 0; i--) {
                 if (numero % i == 0) {
-                    System.out.println(numero + " divido " + i + " igual a " + numero / i);
+                    System.out.println(numero + " divido por" + i + " igual a: " + numero / i);
                 }
             }
 
@@ -31,11 +31,12 @@ public class MultiploThread extends Thread {
         while (t.isAlive()) {
             // Esperando a thread de divisão finalizar a execução
         }
+        System.out.println("---Buscando multiplos---");
 
-        for (int i = 1; i <= 10; i++) {
-            if (numero % i == 0) {
-                System.out.println("Multiplo de " + numero + " vezes " + i + " é igual a: " + numero * i);
-            }
+        for (int i = 0; i <=100; i++) {
+
+            System.out.println("Multiplo de " + numero + " vezes " + i + " é igual a: " + numero*i);
+
         }
 
     }
