@@ -26,12 +26,17 @@ public class MultiploThread extends Thread {
         MultiploThread t = new MultiploThread();
         System.out.print("Digite um numero para buscar os multiplos e divisores: ");
         numero = sc.nextInt();
+        t.start();
+
+        while (t.isAlive()) {
+            // Esperando a thread de divisão finalizar a execução
+        }
 
         for (int i = 1; i <= 10; i++) {
             if (numero % i == 0) {
                 System.out.println("Multiplo de " + numero + " vezes " + i + " é igual a: " + numero * i);
             }
         }
-        t.start();
+
     }
 }
