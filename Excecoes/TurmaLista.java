@@ -36,18 +36,17 @@ public class TurmaLista {
         }
     }
 
-    public Estudante pesquisar(int matricula) throws EstudanteInexistenteException {
+    public Estudante pesquisar(int matricula) throws MatriculaInexistenteException {
 
         for (Estudante i : estudantes) {
 
             if (i.getMatricula() == matricula) {
                 System.out.println("Numero da matricula encontrada!\nNr da matricula requsitada: " + matricula);
                 return i;
-            } else
-                throw new EstudanteInexistenteException(matricula);
+            }
         }
+        throw new MatriculaInexistenteException(matricula);
 
-        return null;
     }
 
     public Estudante pesquisar(String nome) {
@@ -67,22 +66,23 @@ public class TurmaLista {
                 estudantes.remove(i);
                 System.out.println("Estudante com matricula " + matricula + " removida!");
                 return;
-            } ;
+            }
+            
 
         }
         throw new EstudanteInexistenteException();
     }
 
-    public void trancar(Estudante e) throws EstudanteInexistenteException{
+    public void trancar(Estudante e) throws EstudanteInexistenteException {
         for (Estudante i : estudantes) {
             if (i == e) {
                 estudantes.remove(e);
                 System.out.println("Estudante removido com matricula " + i.getMatricula() + " removida!");
                 return;
             }
-        
+
         }
-        throw new EstudanteInexistenteException();    
+        throw new EstudanteInexistenteException(e);
     }
 
     public void listar() {

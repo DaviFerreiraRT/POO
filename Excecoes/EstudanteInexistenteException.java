@@ -1,17 +1,17 @@
 public class EstudanteInexistenteException extends Exception {
-    private int Mestudante;
+    private Estudante Mestudante;
 
     public EstudanteInexistenteException() {
        super("Erro:Estudante inexistente!");
         
     }
 
-    public EstudanteInexistenteException(int Mestudante) {
+    public EstudanteInexistenteException(Estudante Mestudante) {
         this();
         this.Mestudante=Mestudante;
     }
 
-    public int getEstudante() {
+    public Estudante getEstudante() {
         return Mestudante;
     }
     public void TipoDoErro() {
