@@ -18,6 +18,7 @@ class Fibonacci extends Thread {
         if (this.numero == 1) {
             System.out.println(1);
         } else {
+            sequencia.add(0);
             sequencia.add(1);
             sequencia.add(1);
             while (numero > sequencia.get(sequencia.size() - 1)) {

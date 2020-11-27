@@ -69,16 +69,17 @@ public class Frota {
     }
 
     public void aumentarPrecoPlaca(String placa, float aumento) throws AumentoNegativoException {
-        for (Veiculo v : veiculos) {
-            if (aumento >= 0) {
+        if (aumento > 0) {
+            for (Veiculo v : veiculos) {
                 if (v.getPlaca().equals(placa)) {
                     v.aumentarPreco(aumento);
                     System.out.println("Novo preço com aumento: " + aumento);
                 }
-            } else {
-                throw new AumentoNegativoException();
             }
+        } else {
+            throw new AumentoNegativoException();
         }
+
     }
 
     public void aumentarPrecoChassi(long chassi, float aumento) {

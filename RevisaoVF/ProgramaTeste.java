@@ -8,9 +8,9 @@ public class ProgramaTeste {
         try {
             f.incluir(c);
             f.incluir(cp);
-            f.incluir(null);
-            f.excluirPorChassi(5451257);
-            f.aumentarPrecoPlaca("HVR-0608", 5);
+            //f.incluir(null);
+            f.excluirPorChassi(2264623);
+            f.aumentarPrecoPlaca("HVR-0608", 4000);
         } catch (VeiculoNuloException e) {
            System.out.println("Erro: Veiculo Nulo!");
         } catch (ChassiNaoLocalizadoException e) {
