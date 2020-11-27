@@ -16,7 +16,7 @@ public class Atividade {
 		
 	}
 
-	//
+	
 	public static void Dados() {
 		String nome, endereco, filiacao, dtnasci;
 		Scanner ler = new Scanner(System.in);
