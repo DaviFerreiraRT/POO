@@ -1,3 +1,14 @@
 .metadata/
 git
 .gitignore
+/Heranca/target/
+/Excecoes/target/
+/Threads/target/
+/ClassesEstaticas/target/
+/ClassesAbstratasEInterface/target/
+/AtividadeEstudantes/target/
+/ProvaVP2/target/
+/RevisaoVP2/target/
+/ProvaVP1/target/
+/AtividadeAgregacao/target/
+/RevisaoVF/target/
