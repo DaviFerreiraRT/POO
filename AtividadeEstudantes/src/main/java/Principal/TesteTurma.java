@@ -1,5 +1,6 @@
-package Turma;
+package Principal;
 import Estudante.Estudante;
+import Turma.Turma;
 public class TesteTurma {
 
     public static void main(String[] args) {

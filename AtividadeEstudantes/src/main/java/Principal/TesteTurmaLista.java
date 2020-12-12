@@ -1,5 +1,6 @@
-package Turma;
+package Principal;
 import Estudante.Estudante;
+import Turma.TurmaArrayList;
 import java.util.*;
 
 public class TesteTurmaLista {
